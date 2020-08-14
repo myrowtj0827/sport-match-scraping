@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6dfc4be5-ef3c-4857-af47-20e3a0eb92a1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XKHIpS1QClINNBfuxh3pMCwHvz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/hourly/free" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\@@@_working\subject_fast\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dfc4be5-ef3c-4857-af47-20e3a0eb92a1" name="Default Changelist" comment="" />
+      <created>1580787788985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580787788985</updated>
+      <workItem from="1580787790362" duration="11000000" />
+      <workItem from="1580878095731" duration="427000" />
+      <workItem from="1580883540325" duration="1073000" />
+      <workItem from="1580920327686" duration="549000" />
+      <workItem from="1583542275853" duration="1931000" />
+      <workItem from="1583546621937" duration="637000" />
+      <workItem from="1592178036429" duration="9041000" />
+      <workItem from="1592187193668" duration="1167000" />
+      <workItem from="1592189051239" duration="830000" />
+      <workItem from="1592190408986" duration="75026000" />
+      <workItem from="1592446490297" duration="6465000" />
+      <workItem from="1592506541456" duration="1274000" />
+      <workItem from="1592535789633" duration="3421000" />
+      <workItem from="1593011239476" duration="812000" />
+      <workItem from="1593071803515" duration="2222000" />
+      <workItem from="1593122228346" duration="1284000" />
+      <workItem from="1593141604207" duration="3548000" />
+      <workItem from="1593216310721" duration="599000" />
+      <workItem from="1593229336961" duration="2479000" />
+      <workItem from="1593242896789" duration="8582000" />
+      <workItem from="1593283866479" duration="633000" />
+      <workItem from="1593303072306" duration="951000" />
+      <workItem from="1593313864711" duration="3036000" />
+      <workItem from="1593326523866" duration="16354000" />
+      <workItem from="1593388096853" duration="7910000" />
+      <workItem from="1593407842094" duration="7122000" />
+      <workItem from="1593473765452" duration="10014000" />
+      <workItem from="1593828521795" duration="6084000" />
+      <workItem from="1593907385892" duration="2140000" />
+      <workItem from="1594019473469" duration="599000" />
+      <workItem from="1594072526253" duration="1845000" />
+      <workItem from="1594104986596" duration="3705000" />
+      <workItem from="1594169553208" duration="1265000" />
+      <workItem from="1594172041508" duration="612000" />
+      <workItem from="1594174450325" duration="2435000" />
+      <workItem from="1594338364055" duration="41484000" />
+      <workItem from="1594529266153" duration="980000" />
+      <workItem from="1594531621867" duration="1388000" />
+      <workItem from="1594629900629" duration="1715000" />
+      <workItem from="1594632096222" duration="4480000" />
+      <workItem from="1594775137237" duration="2477000" />
+      <workItem from="1594805808561" duration="2852000" />
+      <workItem from="1594884989874" duration="2642000" />
+      <workItem from="1595030669233" duration="286000" />
+      <workItem from="1595032873142" duration="1695000" />
+      <workItem from="1595177647870" duration="611000" />
+      <workItem from="1595179508628" duration="748000" />
+      <workItem from="1597275618956" duration="255000" />
+      <workItem from="1597276578197" duration="1748000" />
+      <workItem from="1597298971096" duration="2364000" />
+      <workItem from="1597346597462" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2492" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592446945796">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2492" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592446945796" />
+    <state x="645" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592178226916">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="645" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1592178226916" />
+    <state x="665" y="339" width="607" height="526" key="find.popup" timestamp="1597277179272">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="665" y="339" width="607" height="526" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1597277179272" />
+    <state x="2585" y="339" width="607" height="526" key="find.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1594389182263" />
+    <state x="2454" y="268" key="run.anything.popup" timestamp="1592197587541">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2454" y="268" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592197587541" />
+  </component>
+</project>
