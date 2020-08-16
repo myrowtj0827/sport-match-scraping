@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const FilterSchema = new Schema({
     id: {
         type: String,
-        required: true,
+        required: false,
     },
     link: {
         type: String,

@@ -30,7 +30,6 @@ let nSeason = 0;
 let nTeams = 0;
 
 let lastStage = false;
-let lastId = 0;
 let goLinkLen = 2688;
 
 const nth = 1;
@@ -123,7 +122,7 @@ router.post("/scraping-product", async (req, res) => {
 
         for (let k = nSeason; k < pLen; k ++) {
             lastStage = true;
-            await sleep(2000);
+            // await sleep(2000);
             await console.log("k = ", k, '\n', scrapingItem[k].link);
 
             await gettingCategoryLink(fifthMatch, scrapingItem[k].link + "risultati/");
@@ -223,12 +222,13 @@ async function gettingCategoryLink(matchStr, bUrl) {
                     .forBrowser('chrome')
                     .build();
 
-                await driver.get("https://www.diretta.it/calcio/albania/super-league/risultati/");
+                await driver.get(bUrl);
                 await driver.wait(until.elementLocated(By.className(matchStr)));
                 let sMatch = await driver.findElement(By.className(matchStr)).getAttribute('innerHTML');
-                console.log("successful  -> ", sMatch);
+
                 await driver.quit();
                 console.log(sMatch.length);
+                console.log("=========================");
 
                 /**
                  * Getting the last Link
@@ -236,6 +236,15 @@ async function gettingCategoryLink(matchStr, bUrl) {
                 let sCategory;
                 let sCountry;
                 let sLeague;
+
+                let nCount = 0;
+                let lastLink;
+                let sDate;
+                let sTeamA;
+                let sTeamB;
+                let finalScore;
+                let timeScored_firstHalf;
+                let timeScored_secondHalf;
 
                 let ss = bUrl.split("/");
                 sCategory = ss[3];
@@ -246,8 +255,13 @@ async function gettingCategoryLink(matchStr, bUrl) {
                     sLeague += "-2019-2020";
                 }
 
+                if(sCategory === "calcio") {
+                    sCategory = "football";
+                }
+
                 let sId = "id=\"g_";
                 let n = sMatch.search(sId);
+
 
                 while(n >= 0) {
                     try {
@@ -255,46 +269,23 @@ async function gettingCategoryLink(matchStr, bUrl) {
                         if(sMatch[0] === "_") sMatch = sMatch.slice(1, );
 
                         let nI = sMatch.search("\"");
-                        let lastLink = sMatch.slice(0, nI);
+                        lastLink = sMatch.slice(0, nI);
                         sMatch = sMatch.slice(nI + 1, );
 
                         lastLink = baseUrl + "partita/" + lastLink + "/#informazioni-partita/";
                         console.log(lastLink);
 
                         /**
-                         * lastLink is the last description link
-                         * Store to the database ScrapingProducts
-                         */
-                        // goLink.push(lastLink);
-                        // const scraping_Product = new ScrapingProduct({
-                        //     id: goLink.length,
-                        //     link: goLink[goLink.length - 1]
-                        // });
-                        //
-                        // await scraping_Product.save();
-                        // console.log(goLink.length, "  -> ", goLink[goLink.length - 1]);
-
-                        /**
                          * Description Information
                          */
-
-                        let sDate;
-                        let sTeamA;
-                        let sTeamB;
-                        let finalScore;
-                        // let firstHalfScore;
-                        // let secondHalfScore;
-                        let timeScored_firstHalf;
-                        let timeScored_secondHalf;
-
                         const result = await axios.get(lastLink);
                         let $ = await cheerio.load(result.data);
 
-                        // let sCountryLeague = $("span.description__country").text();
-                        //
-                        // let t = sCountryLeague.search(":");
-                        // sCountry = sCountryLeague.slice(0, t).trim();
-                        // sLeague = sCountryLeague.slice(t + 2, ).trim();
+                         // let sCountryLeague = $("span.description__country").text();
+                         //
+                         // let t = sCountryLeague.search(":");
+                         // sCountry = sCountryLeague.slice(0, t).trim();
+                         // sLeague = sCountryLeague.slice(t + 2, ).trim();
 
                         sTeamA = $("div.team-text.tname-home > div > div > a").text();
                         sTeamB = $("div.team-text.tname-away > div > div > a").text();
@@ -315,7 +306,7 @@ async function gettingCategoryLink(matchStr, bUrl) {
                         await driver.wait(until.elementLocated(By.id("detcon")));
 
                         sDate = await driver.findElement(By.className("description__time")).getAttribute('innerHTML');
-                        timeScored_firstHalf = await driver.findElement(By.className("time-box")).getAttribute('innerHTML');
+                        //timeScored_firstHalf = await driver.findElement(By.className("time-box")).getAttribute('innerHTML');
 
                         // await driver.wait(until.elementLocated(By.className("div.stage-12")));
                         // let sFirst = await driver.findElement(By.className("p2_home")).getAttribute('innerHTML');
@@ -329,37 +320,44 @@ async function gettingCategoryLink(matchStr, bUrl) {
                         // secondHalfScore = sFirst.toString().trim() + '-' + sSecond.toString().trim();
 
                         await driver.quit();
-                        lastId += 1;
+                        nCount += 1;
+                        console.log("ncount = ", nCount);
 
                         console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
                         console.log("Match Date = ", sDate);
                         console.log("TeamA = ", sTeamA);
                         console.log("TeamB = ", sTeamB);
                         console.log("FinalScore = ", finalScore);
+                        //console.log("timeScored_firstHalf = ", timeScored_firstHalf);
 
-                        console.log("timeScored_firstHalf = ", timeScored_firstHalf);
 
-                        const scraping_data = new Filter({
-                            id: lastId,
-                            link: lastLink,
-                            category: sCategory,
-                            country: sCountry,
-                            league: sLeague,
-                            matchDate: sDate,
-                            teamA: sTeamA,
-                            teamB: sTeamB,
-                            finalScore: finalScore,
+                        const scraping_data = await new Filter({
+                            link: lastLink.trim(),
+                            category: sCategory.trim(),
+                            country: sCountry.trim(),
+                            league: sLeague.trim(),
+                            matchDate: sDate.trim(),
+                            teamA: sTeamA.trim(),
+                            teamB: sTeamB.trim(),
+                            finalScore: finalScore.trim(),
+                            //historiesFirstHalf: timeScored_firstHalf.trim(),
                         });
-
-                        scraping_data.save();
-                        console.log(i + 1, "  -> ");
-
+                        await scraping_data.save();
                         n = sMatch.search(sId);
+
+                        console.log(" n = ", n);
+
                     } catch (e) {
                         await driver.quit();
                         n = sMatch.search(sId);
+                        console.log(" error -> n = ", n);
                     }
                 }
+
+
+
+
+
             } catch (e) {
                 if(error.response === undefined) {
                     console.log("Site Error - Un-existing Url");
@@ -367,12 +365,10 @@ async function gettingCategoryLink(matchStr, bUrl) {
                     return 0;
                 } else {
                     console.log("Last Stage Error !!", error);
-                    await sleep(1500);
+                    await sleep(1000);
                     await gettingCategoryLink(matchStr, bUrl);
                 }
-
             }
-
         } else {
             const result = await axios.get(bUrl);
             let $ = await cheerio.load(result.data);

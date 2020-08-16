@@ -6,14 +6,8 @@ router.post("/register-product", async (req, res) => {
     console.log(req.body);
 
     const newProduct = new Filter({
-        product_id: req.body.product_id,
-        product_photo: req.body.product_photo,
-        product_category: req.body.product_category,
-        product_name: req.body.product_name,
-        product_price: req.body.product_price,
-        product_description: req.body.product_description,
-        product_photo_url: req.body.product_photo_url,
-        product_store_address: req.body.product_store_address,
+        id: req.body.id,
+        link: req.body.link,
     });
 
     await newProduct.save();
@@ -34,8 +28,8 @@ router.get("/get-product-all", async (req, res) => {
 
 router.post("/get-product-sort", (req, res) => {
     Filter.find({
-        product_category: req.body.category,
-    }).collation( { locale: 'en', strength: 2 } ).sort({product_price: 1}).then(productSortList => {
+        link: req.body.link,
+    }).collation( { locale: 'en', strength: 2 } ).sort({category: 1}).then(productSortList => {
 
         if(productSortList){
             return res.status(200).json({results: [...productSortList]});
