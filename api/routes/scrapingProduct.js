@@ -111,7 +111,7 @@ router.post("/scraping-product", async (req, res) => {
     // nSeason = goLink.length;
     // console.log("nLeague = ", nSeason);
 
-    nSeason = 4970;
+    nSeason = 4971;
 
     /**
      * Getting Description
@@ -119,44 +119,16 @@ router.post("/scraping-product", async (req, res) => {
     await ScrapingProduct.find({}).then(async scrapingItem => {
 
         let pLen = scrapingItem.length;
-
         for (let k = nSeason; k < pLen; k ++) {
             lastStage = true;
-            // await sleep(2000);
-            await console.log("k = ", k, '\n', scrapingItem[k].link);
-
-            await gettingCategoryLink(fifthMatch, scrapingItem[k].link + "risultati/");
-            // await console.log("###############", "5 Stage/", k, "  -->  ", goLink.length);
-
-
-
-
-
-
-            /*let linkS = "https://www.diretta.it/volley/croazia/superliga-2011-2012/risultati/";
-            const outputFile = "aaa.txt";
-            wget.download(linkS, outputFile);
-            await gettingCategoryLink(fifthMatch, linkS);*/
+            await console.log("Starting k = ", k, '\n', scrapingItem[k].link);
+            await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
+            await console.log("###############", "5 Stage/", k, "  -->  Completing");
         }
     });
 
-    nTeams = goLink.length;
-    console.log("nLeague = ", nTeams);
-
-
-
-
-
-
-
-
     // await gettingCountryLeagueLink(secondCountryLeague);
-    console.log(" ===============  Country and League Scraping Done !!!!! =============");
-    // console.log(goLink, "categoryCount = ", nCategory);
-
-
-    //await shownData(ScrapingProduct);
-
+    console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
 });
 
@@ -210,7 +182,7 @@ async function initializeDB(pStage) {
  * @param baseUrl
  * @returns {Promise<number>}
  */
-async function gettingCategoryLink(matchStr, bUrl) {
+async function gettingCategoryLink(iM, matchStr, bUrl) {
     try {
         if (lastStage === true) {
             try {
@@ -223,12 +195,20 @@ async function gettingCategoryLink(matchStr, bUrl) {
                     .build();
 
                 await driver.get(bUrl);
+
+                try {
+                    let mError = await driver.findElement(By.className('nmf__title')).getAttribute('innerHTML');
+                    if(mError === "Nessun incontro trovato.") {
+                        await driver.quit();
+                        return 0;
+                    }
+                } catch (e) {
+                }
+
                 await driver.wait(until.elementLocated(By.className(matchStr)));
                 let sMatch = await driver.findElement(By.className(matchStr)).getAttribute('innerHTML');
-
-                await driver.quit();
                 console.log(sMatch.length);
-                console.log("=========================");
+                await driver.quit();
 
                 /**
                  * Getting the last Link
@@ -243,8 +223,8 @@ async function gettingCategoryLink(matchStr, bUrl) {
                 let sTeamA;
                 let sTeamB;
                 let finalScore;
-                let timeScored_firstHalf;
-                let timeScored_secondHalf;
+                let timeScored_firstHalf = "";
+                let timeScored_secondHalf = "";
 
                 let ss = bUrl.split("/");
                 sCategory = ss[3];
@@ -262,7 +242,6 @@ async function gettingCategoryLink(matchStr, bUrl) {
                 let sId = "id=\"g_";
                 let n = sMatch.search(sId);
 
-
                 while(n >= 0) {
                     try {
                         sMatch = sMatch.slice(n + 8, );
@@ -273,19 +252,14 @@ async function gettingCategoryLink(matchStr, bUrl) {
                         sMatch = sMatch.slice(nI + 1, );
 
                         lastLink = baseUrl + "partita/" + lastLink + "/#informazioni-partita/";
-                        console.log(lastLink);
 
+                        console.log("5 Stage/ k = ", iM, "   --->   ", bUrl);
+                        console.log('LastLink = ', lastLink);
                         /**
                          * Description Information
                          */
                         const result = await axios.get(lastLink);
                         let $ = await cheerio.load(result.data);
-
-                         // let sCountryLeague = $("span.description__country").text();
-                         //
-                         // let t = sCountryLeague.search(":");
-                         // sCountry = sCountryLeague.slice(0, t).trim();
-                         // sLeague = sCountryLeague.slice(t + 2, ).trim();
 
                         sTeamA = $("div.team-text.tname-home > div > div > a").text();
                         sTeamB = $("div.team-text.tname-away > div > div > a").text();
@@ -305,30 +279,117 @@ async function gettingCategoryLink(matchStr, bUrl) {
                         await driver.get(lastLink);
                         await driver.wait(until.elementLocated(By.id("detcon")));
 
-                        sDate = await driver.findElement(By.className("description__time")).getAttribute('innerHTML');
-                        //timeScored_firstHalf = await driver.findElement(By.className("time-box")).getAttribute('innerHTML');
+                        sDate = await driver.findElement(By.id("utime")).getAttribute('innerHTML');
 
-                        // await driver.wait(until.elementLocated(By.className("div.stage-12")));
-                        // let sFirst = await driver.findElement(By.className("p2_home")).getAttribute('innerHTML');
-                        // let sSecond = await driver.findElement(By.className("p2_away")).getAttribute('innerHTML');
-                        // firstHalfScore = sFirst.toString().trim() + '-' + sSecond.toString().trim();
-                        // console.log("First Half Score = ", firstHalfScore);
-                        //
-                        // await driver.wait(until.elementLocated(By.className("div.stage-13")));
-                        // sFirst = await driver.findElement(By.className("p2_home")).getAttribute('innerHTML');
-                        // sSecond = await driver.findElement(By.className("p2_away")).getAttribute('innerHTML');
-                        // secondHalfScore = sFirst.toString().trim() + '-' + sSecond.toString().trim();
 
+                        /**
+                         * Getting Scores of 1th and 2nd half
+                         */
+                        let aList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--home"));
+                        let bList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--away"));
+                        timeScored_firstHalf = "";
+                        timeScored_secondHalf = "";
+
+                        for(let e of aList) {
+                            try {
+                                let aa = await e.findElement(By.className("soccer-ball")).getText();
+                                if(aa.length === 1) {
+                                    let a;
+                                    try {
+                                        a = "A: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                                    } catch {
+                                        try {
+                                            a = "A: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                        } catch (e) {
+                                        }
+                                    }
+
+                                    timeScored_firstHalf = timeScored_firstHalf + a;
+                                }
+                            } catch {
+                                try {
+                                    /**
+                                     * oneself Goal
+                                     */
+                                    let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
+                                    if(ownGoal.length === 1) {
+
+                                        let a;
+                                        try {
+                                            a = "A: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                                        } catch {
+                                            try {
+                                                a = "A: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                            } catch (e) {
+                                            }
+                                        }
+                                        timeScored_firstHalf = timeScored_firstHalf + a;
+                                    }
+                                } catch (e) {
+                                }
+                            }
+                        }
+
+                        for(let e of bList) {
+                            try {
+                                let bb = await e.findElement(By.className("soccer-ball")).getText();
+                                if(bb.length === 1) {
+                                    let b;
+                                    try {
+                                        b = "B: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                                    } catch {
+                                        try {
+                                            b = "B: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                        } catch (e) {
+                                        }
+                                    }
+
+                                    timeScored_secondHalf = timeScored_secondHalf + b;
+                                }
+                            } catch {
+                                try {
+
+                                    /**
+                                     * oneself Goal
+                                     */
+                                    let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
+                                    if(ownGoal.length === 1) {
+
+                                        let b;
+                                        try {
+                                            b = "B: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                                        } catch {
+                                            try {
+                                                b = "B: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                            } catch (e) {
+                                            }
+                                        }
+
+                                        timeScored_secondHalf = timeScored_secondHalf + b;
+                                    }
+                                } catch (e) {
+                                }
+                            }
+                        }
+
+                        if(timeScored_firstHalf !== "") {
+                            timeScored_firstHalf = timeScored_firstHalf.slice(0, timeScored_firstHalf.length - 2);
+                        }
+                        if(timeScored_secondHalf !== "") {
+                            timeScored_secondHalf = timeScored_secondHalf.slice(0, timeScored_secondHalf.length - 2);
+                        }
                         await driver.quit();
+
                         nCount += 1;
-                        console.log("ncount = ", nCount);
+
 
                         console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
                         console.log("Match Date = ", sDate);
                         console.log("TeamA = ", sTeamA);
                         console.log("TeamB = ", sTeamB);
                         console.log("FinalScore = ", finalScore);
-                        //console.log("timeScored_firstHalf = ", timeScored_firstHalf);
+                        console.log("timeScored_firstHalf = ", timeScored_firstHalf);
+                        console.log("timeScored_secondHalf = ", timeScored_secondHalf);
 
 
                         const scraping_data = await new Filter({
@@ -340,24 +401,18 @@ async function gettingCategoryLink(matchStr, bUrl) {
                             teamA: sTeamA.trim(),
                             teamB: sTeamB.trim(),
                             finalScore: finalScore.trim(),
-                            //historiesFirstHalf: timeScored_firstHalf.trim(),
+                            historiesFirstHalf: timeScored_firstHalf,
+                            historiesSecondHalf: timeScored_secondHalf,
                         });
                         await scraping_data.save();
+
                         n = sMatch.search(sId);
-
-                        console.log(" n = ", n);
-
                     } catch (e) {
                         await driver.quit();
                         n = sMatch.search(sId);
                         console.log(" error -> n = ", n);
                     }
                 }
-
-
-
-
-
             } catch (e) {
                 if(error.response === undefined) {
                     console.log("Site Error - Un-existing Url");
@@ -396,136 +451,10 @@ async function gettingCategoryLink(matchStr, bUrl) {
         if(error.response === undefined) {
             console.log("Site Error - Un-existing Product Url");
         }
-
-        // console.log(error.response);
-
         console.log(goLink.length, "th  -> ", "Timeout 1st + 2nd", error);
         await sleep(1500);
         return 0;
     }
-}
-
-
-
-
-
-
-
-
-
-
-/**
- * Getting the last scraping Information
- * @param nFirst
- * @param nSecond
- * @returns {Promise<void>}
- */
-// async function gettingScraping(nFirst, nSecond) {
-//
-//     for (let i = nFirst; i <= nSecond; i ++) {
-//         try {
-//             if(i === 0) i = 1;
-//
-//             const result = await axios.get(goLink[i - 1]);
-//             // await sleep(2000);
-//             let $ = await cheerio.load(result.data);
-//
-//             /**
-//              * Getting the category list
-//              */
-//             let categoryList = '';
-//
-//             await $("div.breadcrumbContainer > div > div.breadcrumb").each(async function( index ) {
-//                 // await sleep(1000);
-//                 $("span.crumb > a").each( function( index ) {
-//                     if ($(this).text() !== undefined) {
-//                         categoryList += $(this).text() + '/';
-//                         categoryList = categoryList.replace(' & ', '/');
-//                     }
-//                 });
-//
-//                 categoryList = categoryList.replace('Home/', '');
-//                 let mArray = categoryList.split('/');
-//                 mArray = [...new Set(mArray)];
-//
-//                 categoryList = '';
-//                 for (let j = 0; j < mArray.length - 1; j ++) {
-//                     categoryList += mArray[j] + '/';
-//                 }
-//             });
-//
-//             /**
-//              * Getting the details information
-//              */
-//             let sInfo = $("div.primaryDetails");
-//
-//             let photoLink = await $(sInfo).find("div.mediaContainer > div > img").attr("src");
-//             let thumbnailPhotoLink = await $(sInfo).find("div.mediaContainer > img").attr("src");
-//             let productName = await $(sInfo).find("div.coreWrapper > div > a").text().trim();
-//             let productDescription = await $(sInfo).find("div.coreWrapper > div > h1").text().trim();
-//             let productPrice = await $(sInfo).find("div.coreWrapper > div > div.priceRow > div.pdpPrice > p > span.value > span.sellingPriceContainer > span.sellingPrice > span > span.value").text().trim();
-//
-//             await ScrapingProduct.updateOne({scraping_store_address: goLink[i-1]},
-//                 [{$set: {scraping_category: categoryList, scraping_name: productName, scraping_photo_link: photoLink,
-//                     scraping_description: productDescription, scraping_price: productPrice, scraping_thumbnail_Link: thumbnailPhotoLink}}]).then(async () => {
-//                         console.log(i, "    ------> ", goLink[i-1]);
-//             });
-//
-//             await console.log("\n 3rd stage -> ", goLink.length, '/', i, "th   Passed \n");
-//         } catch (error) {
-//             // console.log(i, ' -> ', error.response.status);
-//             if(error.response === undefined) {
-//                 console.log('3rd stage -> ', goLink.length, '/', i, 'th  ', "Site Error - Un-existing Product Url");
-//                 // console.log('3rd stage -> ', goLink.length, '/', i, 'th  ', error);
-//             } else {
-//
-//                 // console.log('3rd stage -> ', goLink.length, '/', i, 'th  ', "Timeout");
-//                 i = i - 1;
-//             }
-//
-//             // await sleep(2000);
-//         }
-//     }
-// }
-
-
-/**
- * Inserting the scraping results to the real DB
- * @param pDbName
- * @returns {Promise<void>}
- */
-async function shownData(pDbName) {
-    let regLink = new RegExp('.+');
-
-    await pDbName.find({
-        link: {$regex: regLink},
-        category: {$regex: regLink},
-        country: {$regex: regLink}
-    }).then( scrapingItems =>  {
-        if(scrapingItems){
-
-            for (let i = 0; i < scrapingItems.length; i ++)
-            {
-                const scraping_Product = new Filter({
-                    id: scrapingItems[i].id,
-                    link: scrapingItems[i].link,
-                    category: scrapingItems[i].category,
-                    country: scrapingItems[i].country,
-                    league: scrapingItems[i].league,
-                    teamA: scrapingItems[i].teamA,
-                    teamB: scrapingItems[i].teamB,
-                    matchDate: scrapingItems[i].matchDate,
-                });
-
-                scraping_Product.save();
-                console.log(i + 1, "  -> ");
-            }
-        } else {
-            return res.status(400).json({msg: "The products don't exist at all !"});
-        }
-    });
-
-    await console.log("Adding to the real DB !!!");
 }
 
 function sleep(milliseconds) {
