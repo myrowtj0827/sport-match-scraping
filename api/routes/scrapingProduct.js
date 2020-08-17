@@ -30,7 +30,7 @@ let nSeason = 0;
 let nTeams = 0;
 
 let lastStage = false;
-let goLinkLen = 2688;
+let goLinkLen = 0;
 
 const nth = 1;
 let nCount_First = 1, nCount_Products;
@@ -111,23 +111,35 @@ router.post("/scraping-product", async (req, res) => {
     // nSeason = goLink.length;
     // console.log("nLeague = ", nSeason);
 
-    nSeason = 4971;
 
     /**
-     * Getting Description
+     * Getting Last Link
      */
+    nSeason = 4970;
     await ScrapingProduct.find({}).then(async scrapingItem => {
-
         let pLen = scrapingItem.length;
         for (let k = nSeason; k < pLen; k ++) {
             lastStage = true;
-            await console.log("Starting k = ", k, '\n', scrapingItem[k].link);
+            await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
             await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
             await console.log("###############", "5 Stage/", k, "  -->  Completing");
         }
     });
 
-    // await gettingCountryLeagueLink(secondCountryLeague);
+
+    /**
+     * Getting Description
+     */
+    nTeams = 33335;
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nTeams; k < pLen; k ++) {
+            await console.log("Starting Result k = ", k, '\n', scrapingItem[k].link);
+            await gettingResult(k - nTeams + 1, scrapingItem[k]);
+            await console.log("###############", "Last Result Stage/", k, "  -->  Completing");
+        }
+    });
+
     console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
 });
@@ -140,7 +152,6 @@ router.post('/get-all', (req, res) => {
     //     return await res.status(200).json({results: [...scrapingItem]});
     // });
 });
-
 
 module.exports = router;
 
@@ -219,12 +230,9 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
 
                 let nCount = 0;
                 let lastLink;
-                let sDate;
                 let sTeamA;
                 let sTeamB;
                 let finalScore;
-                let timeScored_firstHalf = "";
-                let timeScored_secondHalf = "";
 
                 let ss = bUrl.split("/");
                 sCategory = ss[3];
@@ -252,9 +260,8 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
                         sMatch = sMatch.slice(nI + 1, );
 
                         lastLink = baseUrl + "partita/" + lastLink + "/#informazioni-partita/";
+                        console.log('\n LastLink = ', lastLink);
 
-                        console.log("5 Stage/ k = ", iM, "   --->   ", bUrl);
-                        console.log('LastLink = ', lastLink);
                         /**
                          * Description Information
                          */
@@ -264,145 +271,25 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
                         sTeamA = $("div.team-text.tname-home > div > div > a").text();
                         sTeamB = $("div.team-text.tname-away > div > div > a").text();
                         finalScore = $("div.match-info > div.current-result").text().trim();
-
-                        /**
-                         * getting the match date
-                         */
-                        require('chromedriver');
-                        const webdriver = require('selenium-webdriver');
-                        let By = webdriver.By;
-                        let until = webdriver.until;
-                        const driver = new webdriver.Builder()
-                            .forBrowser('chrome')
-                            .build();
-
-                        await driver.get(lastLink);
-                        await driver.wait(until.elementLocated(By.id("detcon")));
-
-                        sDate = await driver.findElement(By.id("utime")).getAttribute('innerHTML');
-
-
-                        /**
-                         * Getting Scores of 1th and 2nd half
-                         */
-                        let aList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--home"));
-                        let bList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--away"));
-                        timeScored_firstHalf = "";
-                        timeScored_secondHalf = "";
-
-                        for(let e of aList) {
-                            try {
-                                let aa = await e.findElement(By.className("soccer-ball")).getText();
-                                if(aa.length === 1) {
-                                    let a;
-                                    try {
-                                        a = "A: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
-                                    } catch {
-                                        try {
-                                            a = "A: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
-                                        } catch (e) {
-                                        }
-                                    }
-
-                                    timeScored_firstHalf = timeScored_firstHalf + a;
-                                }
-                            } catch {
-                                try {
-                                    /**
-                                     * oneself Goal
-                                     */
-                                    let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
-                                    if(ownGoal.length === 1) {
-
-                                        let a;
-                                        try {
-                                            a = "A: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
-                                        } catch {
-                                            try {
-                                                a = "A: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
-                                            } catch (e) {
-                                            }
-                                        }
-                                        timeScored_firstHalf = timeScored_firstHalf + a;
-                                    }
-                                } catch (e) {
-                                }
-                            }
-                        }
-
-                        for(let e of bList) {
-                            try {
-                                let bb = await e.findElement(By.className("soccer-ball")).getText();
-                                if(bb.length === 1) {
-                                    let b;
-                                    try {
-                                        b = "B: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
-                                    } catch {
-                                        try {
-                                            b = "B: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
-                                        } catch (e) {
-                                        }
-                                    }
-
-                                    timeScored_secondHalf = timeScored_secondHalf + b;
-                                }
-                            } catch {
-                                try {
-
-                                    /**
-                                     * oneself Goal
-                                     */
-                                    let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
-                                    if(ownGoal.length === 1) {
-
-                                        let b;
-                                        try {
-                                            b = "B: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
-                                        } catch {
-                                            try {
-                                                b = "B: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
-                                            } catch (e) {
-                                            }
-                                        }
-
-                                        timeScored_secondHalf = timeScored_secondHalf + b;
-                                    }
-                                } catch (e) {
-                                }
-                            }
-                        }
-
-                        if(timeScored_firstHalf !== "") {
-                            timeScored_firstHalf = timeScored_firstHalf.slice(0, timeScored_firstHalf.length - 2);
-                        }
-                        if(timeScored_secondHalf !== "") {
-                            timeScored_secondHalf = timeScored_secondHalf.slice(0, timeScored_secondHalf.length - 2);
-                        }
-                        await driver.quit();
-
                         nCount += 1;
 
+                        let t = (iM).toString() + "-" + (nCount).toString();
 
-                        console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
-                        console.log("Match Date = ", sDate);
-                        console.log("TeamA = ", sTeamA);
-                        console.log("TeamB = ", sTeamB);
+                        console.log(" id = ", t);
+                        // console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
+                        // console.log("TeamA = ", sTeamA);
+                        // console.log("TeamB = ", sTeamB);
                         console.log("FinalScore = ", finalScore);
-                        console.log("timeScored_firstHalf = ", timeScored_firstHalf);
-                        console.log("timeScored_secondHalf = ", timeScored_secondHalf);
 
-
-                        const scraping_data = await new Filter({
+                        const scraping_data = await new ScrapingProduct({
+                            id: t,
                             link: lastLink.trim(),
                             category: sCategory.trim(),
                             country: sCountry.trim(),
                             league: sLeague.trim(),
-                            matchDate: sDate.trim(),
                             teamA: sTeamA.trim(),
                             teamB: sTeamB.trim(),
                             finalScore: finalScore.trim(),
-                            historiesFirstHalf: timeScored_firstHalf,
-                            historiesSecondHalf: timeScored_secondHalf,
                         });
                         await scraping_data.save();
 
@@ -456,6 +343,186 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
         return 0;
     }
 }
+
+
+/**
+ * Last Result
+ * @param m
+ * @param pStr
+ * @returns {Promise<number>}
+ */
+async function gettingResult(m, pStr) {
+    try {
+        try {
+            /**
+             * Getting the last Link
+             */
+            let sCategory = pStr.category;
+            let sCountry = pStr.country;
+            let sLeague = pStr.league;
+
+            let lastLink = pStr.link;
+            let sDate;
+            let sTeamA = pStr.teamA;
+            let sTeamB = pStr.teamB;
+            let finalScore = pStr.finalScore;
+            let timeScored_firstHalf = "";
+            let timeScored_secondHalf = "";
+
+            try {
+                /**
+                 * getting the match date
+                 */
+                require('chromedriver');
+                const webdriver = require('selenium-webdriver');
+                let By = webdriver.By;
+                let until = webdriver.until;
+                const driver = new webdriver.Builder()
+                    .forBrowser('chrome')
+                    .build();
+
+                await driver.get(lastLink);
+                await driver.wait(until.elementLocated(By.id("detcon")));
+
+                sDate = await driver.findElement(By.id("utime")).getAttribute('innerHTML');
+
+                /**
+                 * Getting Scores of 1th and 2nd half
+                 */
+                let aList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--home"));
+                let bList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--away"));
+                timeScored_firstHalf = "";
+                timeScored_secondHalf = "";
+
+                for(let e of aList) {
+                    try {
+                        let aa = await e.findElement(By.className("soccer-ball")).getText();
+                        if(aa.length === 1) {
+                            let a;
+                            try {
+                                a = "A: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                            } catch {
+                                try {
+                                    a = "A: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                } catch (e) {
+                                }
+                            }
+
+                            timeScored_firstHalf = timeScored_firstHalf + a;
+                        }
+                    } catch {
+                        try {
+                            /**
+                             * oneself Goal
+                             */
+                            let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
+                            if(ownGoal.length === 1) {
+
+                                let a;
+                                try {
+                                    a = "A: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                                } catch {
+                                    try {
+                                        a = "A: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                    } catch (e) {
+                                    }
+                                }
+                                timeScored_firstHalf = timeScored_firstHalf + a;
+                            }
+                        } catch (e) {
+                        }
+                    }
+                }
+
+                for(let e of bList) {
+                    try {
+                        let bb = await e.findElement(By.className("soccer-ball")).getText();
+                        if(bb.length === 1) {
+                            let b;
+                            try {
+                                b = "B: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                            } catch {
+                                try {
+                                    b = "B: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                } catch (e) {
+                                }
+                            }
+
+                            timeScored_secondHalf = timeScored_secondHalf + b;
+                        }
+                    } catch {
+                        try {
+
+                            /**
+                             * oneself Goal
+                             */
+                            let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
+                            if(ownGoal.length === 1) {
+
+                                let b;
+                                try {
+                                    b = "B: " + await e.findElement(By.css("div.time-box")).getText() + ", ";
+                                } catch {
+                                    try {
+                                        b = "B: " + await e.findElement(By.css("div.time-box-wide")).getText() + ", ";
+                                    } catch (e) {
+                                    }
+                                }
+
+                                timeScored_secondHalf = timeScored_secondHalf + b;
+                            }
+                        } catch (e) {
+                        }
+                    }
+                }
+
+                if(timeScored_firstHalf !== "") {
+                    timeScored_firstHalf = timeScored_firstHalf.slice(0, timeScored_firstHalf.length - 2);
+                }
+                if(timeScored_secondHalf !== "") {
+                    timeScored_secondHalf = timeScored_secondHalf.slice(0, timeScored_secondHalf.length - 2);
+                }
+                await driver.quit();
+
+                // console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
+                // console.log("Match Date = ", sDate);
+                // console.log("TeamA = ", sTeamA);
+                // console.log("TeamB = ", sTeamB);
+                console.log("FinalScore = ", finalScore);
+                console.log("timeScored_firstHalf = ", timeScored_firstHalf);
+                console.log("timeScored_secondHalf = ", timeScored_secondHalf);
+
+                const scraping_data = await new Filter({
+                    id: m,
+                    link: lastLink.trim(),
+                    category: sCategory.trim(),
+                    country: sCountry.trim(),
+                    league: sLeague.trim(),
+                    matchDate: sDate.trim(),
+                    teamA: sTeamA.trim(),
+                    teamB: sTeamB.trim(),
+                    finalScore: finalScore.trim(),
+                    historiesFirstHalf: timeScored_firstHalf,
+                    historiesSecondHalf: timeScored_secondHalf,
+                });
+                await scraping_data.save();
+            } catch (e) {
+                await driver.quit();
+            }
+
+        } catch (e) {
+            console.log("Error");
+            await sleep(500);
+            return 0;
+        }
+
+    } catch (error) {
+        console.log("Error");
+        await sleep(500);
+        return 0;
+    }
+}
+
 
 function sleep(milliseconds) {
     let timeStart = new Date().getTime();
