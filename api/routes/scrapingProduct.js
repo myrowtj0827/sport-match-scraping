@@ -115,7 +115,7 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Last Link
      */
-    nSeason = 4970;
+    nSeason = 4983;
     await ScrapingProduct.find({}).then(async scrapingItem => {
         let pLen = scrapingItem.length;
         for (let k = nSeason; k < pLen; k ++) {
