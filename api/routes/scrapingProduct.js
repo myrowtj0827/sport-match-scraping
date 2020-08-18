@@ -13,7 +13,7 @@ const wget = require('wget');
 
 
 let goLink = [];
-let mLen, timeFlag;
+let mLen;
 
 let baseUrl = "https://www.diretta.it/";
 let firstCategory = "div.menuMinority > div.menuMinority__content > div.menuMinority__contentInner > a";
@@ -30,10 +30,6 @@ let nSeason = 0;
 let nTeams = 0;
 
 let lastStage = false;
-let goLinkLen = 0;
-
-const nth = 1;
-let nCount_First = 1, nCount_Products;
 
 let m = 0;
 let pStage = 0;
@@ -43,102 +39,101 @@ router.post("/scraping-product", async (req, res) => {
     await console.log("--------------- success  ----------------");
 
     await goLink.slice(0, goLink.length);
-    // goLink[0] = baseUrl;
-    // await initializeDB(pStage);
+    goLink[0] = baseUrl;
+    await initializeDB(pStage);
     await ScrapingProduct.find({}).then(async scrapingItem => {
         for(let k = 0; k < scrapingItem.length; k ++) {
             goLink[k] = scrapingItem[k].link;
 
-            //console.log(k + 1, " -> ", goLink[k]);
+            console.log(k + 1, " -> ", goLink[k]);
         }
-
         console.log("The Initialize !");
     });
 
     /**
      * Getting Categories
      */
-    // await gettingCategoryLink(firstCategory, baseUrl);
-    // await console.log(" ===============  Category Scraping Done !!!!! =============");
-    // console.log("nCategory = ", nCategory);
-    //
+    nCategory = 1;
+    // await gettingCategoryLink(0, firstCategory, baseUrl);
+    await console.log(" ===============  Category Scraping Done !!!!! =============");
+    console.log("nCategory = ", nCategory);
     // nCategory = 35;
-
 
     /**
      * Getting Country
      */
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = 0; k < pLen; k ++) {
-    //         await gettingCategoryLink(secondCountry, scrapingItem[k].link);
-    //         console.log("###############", "2Stage/", k, "  -->  ", goLink.length);
-    //     }
-    // });
-    //
-    // nCountry = goLink.length;
-    // console.log(nCountry);
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = 0; k < pLen; k ++) {
+            await gettingCategoryLink(0, secondCountry, scrapingItem[k].link);
+            console.log("###############", "2Stage/", k, "  -->  ", goLink.length);
+        }
+    });
 
-    // nCountry = 1455;
+    nCountry = goLink.length;
+    console.log(nCountry);
+
+    // nCountry = 300;
 
     /**
      * Getting League
      */
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = nCategory; k < pLen; k ++) {
-    //         await gettingCategoryLink(thirdLeague, scrapingItem[k].link);
-    //         console.log("###############", "3Stage/", k, "  -->  ", goLink.length);
-    //     }
-    // });
-    //
-    // nLeague = goLink.length;
-    // console.log("nLeague = ", nLeague);
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nCategory; k < pLen; k ++) {
+            await gettingCategoryLink(0, thirdLeague, scrapingItem[k].link);
+            console.log("###############", "3Stage/", k, "  -->  ", goLink.length);
+        }
+    });
 
-    // nLeague = 2688;
+    nLeague = goLink.length;
+    console.log("nLeague = ", nLeague);
+
+    // nLeague = 300;
 
     /**
      * Getting Season
      */
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = nCountry; k < pLen; k ++) {
-    //         await gettingCategoryLink(forthSeason, scrapingItem[k].link + "archivio/");
-    //         console.log("###############", "4Stage/", k, "  -->  ", goLink.length);
-    //     }
-    // });
-    //
-    // nSeason = goLink.length;
-    // console.log("nLeague = ", nSeason);
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nCountry; k < pLen; k ++) {
+            await gettingCategoryLink(0, forthSeason, scrapingItem[k].link + "archivio/");
+            console.log("###############", "4Stage/", k, "  -->  ", goLink.length);
+        }
+    });
+
+    nSeason = goLink.length;
+    console.log("nLeague = ", nSeason);
 
 
     /**
      * Getting Last Link
      */
-    nSeason = 4983;
-    await ScrapingProduct.find({}).then(async scrapingItem => {
-        let pLen = scrapingItem.length;
-        for (let k = nSeason; k < pLen; k ++) {
-            lastStage = true;
-            await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
-            await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
-            await console.log("###############", "5 Stage/", k, "  -->  Completing");
-        }
-    });
+    //nSeason = 4970;
+    // await ScrapingProduct.find({}).then(async scrapingItem => {
+    //     let pLen = scrapingItem.length;
+    //     for (let k = nSeason; k < pLen; k ++) {
+    //         lastStage = true;
+    //         await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
+    //         await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
+    //         await console.log("###############", "5 Stage/", k, "  -->  Completing");
+    //     }
+    // });
 
 
     /**
      * Getting Description
      */
-    nTeams = 33335;
-    await ScrapingProduct.find({}).then(async scrapingItem => {
-        let pLen = scrapingItem.length;
-        for (let k = nTeams; k < pLen; k ++) {
-            await console.log("Starting Result k = ", k, '\n', scrapingItem[k].link);
-            await gettingResult(k - nTeams + 1, scrapingItem[k]);
-            await console.log("###############", "Last Result Stage/", k, "  -->  Completing");
-        }
-    });
+    // nTeams = 36487;
+    // await ScrapingProduct.find({}).then(async scrapingItem => {
+    //     let pLen = scrapingItem.length;
+    //     for (let k = nTeams; k < pLen; k ++) {
+    //         await sleep(500);
+    //         await console.log("Starting Result k = ", k, '\n', scrapingItem[k].link);
+    //         await gettingResult(k - nTeams + 3154, scrapingItem[k]);
+    //         await console.log("###############", "Last Result Stage/", k, "  -->  Completing");
+    //     }
+    // });
 
     console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
@@ -312,10 +307,13 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
                 }
             }
         } else {
+
             const result = await axios.get(bUrl);
             let $ = await cheerio.load(result.data);
             let aStr;
             const aTags = $(matchStr);
+
+            console.log("+============", aTags.length);
 
             for (let i = 0; i < aTags.length; i++) {
 
