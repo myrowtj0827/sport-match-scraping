@@ -53,6 +53,19 @@ const FilterSchema = new Schema({
         type: String,
         required: false,
     },
+    final1X2: {
+        type: String,
+        required: false,
+    },
+    overUnder: {
+        type: String,
+        required: false,
+    },
+    gol: {
+        type: String,
+        required: false,
+    },
+
 });
 
 module.exports = Filter = mongoose.model("filters", FilterSchema);

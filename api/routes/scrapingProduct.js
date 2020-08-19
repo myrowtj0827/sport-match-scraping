@@ -111,30 +111,30 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Last Link
      */
-    nSeason = 1219;
-    await ScrapingProduct.find({}).then(async scrapingItem => {
-        let pLen = scrapingItem.length;
-        for (let k = nSeason; k < 1220; k ++) {
-            lastStage = true;
-            await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
-            await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
-            await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
-        }
-    });
+    // nSeason = 1270;
+    // await ScrapingProduct.find({}).then(async scrapingItem => {
+    //     let pLen = scrapingItem.length;
+    //     for (let k = nSeason; k < pLen; k ++) {
+    //         lastStage = true;
+    //         await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
+    //         await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
+    //         await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
+    //     }
+    // });
 
     /**
      * Getting Description
      */
-    // nTeams = 1;
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = nTeams; k < pLen; k ++) {
-    //         await sleep(500);
-    //         await console.log("\n Starting Result k = ", k, scrapingItem[k].link);
-    //         await gettingResult(k - nTeams + 1, scrapingItem[k]);
-    //         await console.log("\n ***************************************************************************************\n", "Last Result Stage/", k, "  -->  Completing");
-    //     }
-    // });
+    nTeams = 0;
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nTeams; k < pLen; k ++) {
+            await sleep(200);
+            await console.log("\n Starting Result k = ", 1, scrapingItem[k].link);
+            await gettingResult(k - nTeams + 1, scrapingItem[k]);
+            await console.log("\n ***************************************************************************************\n", "Last Result Stage/", k, "  -->  Completing");
+        }
+    });
 
     console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
@@ -508,7 +508,6 @@ async function gettingResult(m, pStr) {
                         timeScored_firstHalf = await driver.findElement(By.css("div.detailMS__incidentsHeader.stage-12"));
                         timeScored_firstHalf = await timeScored_firstHalf.findElement(By.className("detailMS__headerScore")).getText();
                     } catch {}
-
                 }
 
                 if(timeScored_secondHalf !== "") {
@@ -521,143 +520,148 @@ async function gettingResult(m, pStr) {
                     } catch {}
                 }
 
+
+                await driver.wait(until.elementLocated(By.id("detail-bookmarks")));
+                let sMenu = await driver.findElement(By.id("detail-bookmarks")).getAttribute('innerHTML');
+                let deepMenu;
                 /**
                  * Odds 1x2
                  */
-                try {
-                    let oddsLink = lastLink.replace("/#informazioni-partita", "/#comparazione-quote;quote-1x2;finale");
+                if(sMenu.includes('Comparazione quote') === true) {
+                    try {
+                        let oddsLink = lastLink.replace("/#informazioni-partita", "/#comparazione-quote;quote-1x2;finale");
+                        await driver.get(oddsLink);
 
-                    await driver.get(oddsLink);
-                    await driver.wait(until.elementLocated(By.id("odds_1x2")));
-                    let sFinal = await driver.findElements(By.css("span.odds-wrap"));
+                        // await driver.wait(until.elementLocated(By.id("odds-comparison-content")));
+                        // deepMenu = await driver.findElement(By.id("odds-comparison-content")).getAttribute('innerHTML');
+                        // console.log(deepMenu);
 
-                    let odds = [];
-                    let array = [];
+                            await driver.wait(until.elementLocated(By.id("odds_1x2")));
+                            let sFinal = await driver.findElements(By.css("span.odds-wrap"));
 
-                    for(let e of sFinal) {
-                        try {
-                            let ss = await e.getText();
-                            if((ss !== '-') && (ss !== '')) {
-                                array.push(ss);
-                                if (odds[array.length % 3]) {
-                                    odds[array.length % 3] += parseFloat(ss.trim());
-                                } else {
-                                    odds[array.length % 3] = parseFloat(ss.trim());
+                            let odds = [];
+                            let array = [];
+
+                            for(let e of sFinal) {
+                                try {
+                                    let ss = await e.getText();
+                                    if((ss !== '-') && (ss !== '')) {
+                                        array.push(ss);
+                                        if (odds[array.length % 3]) {
+                                            odds[array.length % 3] += parseFloat(ss.trim());
+                                        } else {
+                                            odds[array.length % 3] = parseFloat(ss.trim());
+                                        }
+                                    }
+                                } catch {
+                                    console.log("Odds Error 1 !");
                                 }
                             }
-                        } catch {
-                            console.log("Odds Error 1 !");
+
+                            odds[1] = 300 * odds[1]/array.length; odds[1] = Math.floor(odds[1]) / 100;
+                            odds[2] = 300 * odds[2]/array.length; odds[2] = Math.floor(odds[2]) / 100;
+                            odds[0] = 300 * odds[0]/array.length; odds[0] = Math.floor(odds[0]) / 100;
+
+                            final1X2 = odds[1].toString() + " : " + odds[2].toString() + " : " + odds[0].toString();
+
+                    } catch {
+                        console.log("Odds Error 2 !");
+                        await driver.quit();
+                    }
+                } else {
+                    final1X2 = "";
+                }
+
+
+                /**
+                 * Over/Under
+                 */
+                if(sMenu.includes('Comparazione quote') === true) {
+                    try {
+                        let oddsLink = await lastLink.replace("/#informazioni-partita", "/#comparazione-quote;over-under;finale");
+
+                        await driver.get(oddsLink);
+                        await driver.wait(until.elementLocated(By.id("block-under-over-ft")));
+                        await driver.wait(until.elementLocated(By.css("tr.odd")));
+                        let sFinal = await driver.findElements(By.css("tr.odd"));
+                        overUnder = "";
+                        for (let ee of sFinal) {
+                            let overs = await ee.getText();
+                            if ((overs === '') || (overs.includes('-') === true)) continue;
+                            let sP = overs.split('\n');
+
+                            overUnder += sP[0] + ":" + sP[1] + "/" + sP[0] + ":" + sP[2] + " -/- ";
                         }
+
+
+                        await driver.wait(until.elementLocated(By.css("tr.even")));
+                        sFinal = await driver.findElements(By.css("tr.even"));
+                        for (let ee of sFinal) {
+                            let overs = await ee.getText();
+                            if ((overs === '') || (overs.includes('-') === true)) continue;
+                            let sP = overs.split('\n');
+
+                            overUnder += sP[0] + ":" + sP[1] + "/" + sP[0] + ":" + sP[2] + " -/- ";
+                        }
+
+                    } catch(error) {
+                        console.log(error);
                     }
 
-                    odds[1] = 300 * odds[1]/array.length; odds[1] = Math.floor(odds[1]) / 100;
-                    odds[2] = 300 * odds[2]/array.length; odds[2] = Math.floor(odds[2]) / 100;
-                    odds[0] = 300 * odds[0]/array.length; odds[0] = Math.floor(odds[0]) / 100;
-
-                    final1X2 = odds[1].toString() + " : " + odds[2].toString() + " : " + odds[0].toString();
-                } catch {
-                    console.log("Odds Error 2 !");
-                }
-
-                /**
-                 * Over/Under
-                 */
-
-                try {
-                    let oddsLink = await lastLink.replace("/#informazioni-partita", "/#comparazione-quote;over-under;finale");
-
-                    await driver.get(oddsLink);
-                    await driver.wait(until.elementLocated(By.id("block-under-over-ft")));
-                    await driver.wait(until.elementLocated(By.css("tr.odd")));
-                    let sFinal = await driver.findElements(By.css("tr.odd"));
+                    if(overUnder !== "") {
+                        overUnder = overUnder.slice(0, overUnder.length - 4);
+                    }
+                } else {
                     overUnder = "";
-                    for (let ee of sFinal) {
-                        let overs = await ee.getText();
-                        if ((overs === '') || (overs.includes('-') === true)) continue;
-                        let sP = overs.split('\n');
-
-                        overUnder += sP[0] + ":" + sP[1] + "/" + sP[0] + ":" + sP[2] + " -/- ";
-                    }
-
-
-                    await driver.wait(until.elementLocated(By.css("tr.even")));
-                    sFinal = await driver.findElements(By.css("tr.even"));
-                    for (let ee of sFinal) {
-                        let overs = await ee.getText();
-                        if ((overs === '') || (overs.includes('-') === true)) continue;
-                        let sP = overs.split('\n');
-
-                        overUnder += sP[0] + ":" + sP[1] + "/" + sP[0] + ":" + sP[2] + " -/- ";
-                    }
-
-                } catch(error) {
-                    console.log(error);
-                }
-
-                if(overUnder !== "") {
-                    overUnder = overUnder.slice(0, overUnder.length - 4);
                 }
 
                 /**
-                 * Over/Under
+                 * Gol
                  */
+                if(sMenu.includes('Comparazione quote') === true) {
+                    try {
+                        let oddsLink = await lastLink.replace("/#informazioni-partita", "/#comparazione-quote;gol-no-gol;finale");
 
-                try {
-                    let oddsLink = await lastLink.replace("/#informazioni-partita", "/#comparazione-quote;gol-no-gol;finale");
+                        await driver.get(oddsLink);
+                        await driver.wait(until.elementLocated(By.id("block-both-teams-to-score-ft")));
+                        await driver.wait(until.elementLocated(By.css("tr.odd")));
+                        let sFinal = await driver.findElements(By.css("tr.odd"));
 
-                    await driver.get(oddsLink);
-                    await driver.wait(until.elementLocated(By.id("block-both-teams-to-score-ft")));
-                    await driver.wait(until.elementLocated(By.css("tr.odd")));
-                    let sFinal = await driver.findElements(By.css("tr.odd"));
+                        gol = "";
+                        for (let ee of sFinal) {
+                            let overs = await ee.getText();
+                            if ((overs === '') || (overs.includes('-') === true)) continue;
+                            let sP = overs.split('\n');
 
+                            gol += "Yes:" + sP[0] + " / " + "No:" + sP[1] + " -/- ";
+                        }
+
+                        await driver.wait(until.elementLocated(By.css("tr.even")));
+                        sFinal = await driver.findElements(By.css("tr.even"));
+                        for (let ee of sFinal) {
+                            let overs = await ee.getText();
+                            if ((overs === '') || (overs.includes('-') === true)) continue;
+                            let sP = overs.split('\n');
+
+                            gol += "Yes:" + sP[0] + " / " + "No:" + sP[1] + " -/- ";
+                        }
+                    } catch(error) {
+                        console.log(error);
+                    }
+
+                    if(gol !== "") {
+                        gol = gol.slice(0, gol.length - 4);
+                    }
+                } else {
                     gol = "";
-                    for (let ee of sFinal) {
-                        let overs = await ee.getText();
-                        if ((overs === '') || (overs.includes('-') === true)) continue;
-                        let sP = overs.split('\n');
-
-                        gol += "Yes:" + sP[0] + " / " + "No:" + sP[1] + " -/- ";
-                    }
-
-                    await driver.wait(until.elementLocated(By.css("tr.even")));
-                    sFinal = await driver.findElements(By.css("tr.even"));
-                    for (let ee of sFinal) {
-                        let overs = await ee.getText();
-                        if ((overs === '') || (overs.includes('-') === true)) continue;
-                        let sP = overs.split('\n');
-
-                        gol += "Yes:" + sP[0] + " / " + "No:" + sP[1] + " -/- ";
-                    }
-                } catch(error) {
-                    console.log(error);
                 }
-
-                if(gol !== "") {
-                    gol = gol.slice(0, gol.length - 4);
-                }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 await driver.quit();
 
-                console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
-                console.log("Match Date = ", sDate);
-                console.log("TeamA = ", sTeamA);
-                console.log("TeamB = ", sTeamB);
+                // console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
+                // console.log("Match Date = ", sDate);
+                // console.log("TeamA = ", sTeamA);
+                // console.log("TeamB = ", sTeamB);
                 console.log("FinalScore = ", finalScore);
                 console.log("TimeScored_firstHalf = ", timeScored_firstHalf);
                 console.log("TimeScored_secondHalf = ", timeScored_secondHalf);
@@ -687,12 +691,12 @@ async function gettingResult(m, pStr) {
             }
 
         } catch (e) {
-            await sleep(500);
+            await sleep(300);
             return 0;
         }
 
     } catch (error) {
-        await sleep(500);
+        await sleep(300);
         return 0;
     }
 }
