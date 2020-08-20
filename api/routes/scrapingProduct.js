@@ -111,30 +111,30 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Last Link
      */
-    // nSeason = 1270;
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = nSeason; k < pLen; k ++) {
-    //         lastStage = true;
-    //         await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
-    //         await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
-    //         await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
-    //     }
-    // });
+    nSeason = 1279;
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nSeason; k < 1350; k ++) {
+            lastStage = true;
+            await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
+            await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
+            await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
+        }
+    });
 
     /**
      * Getting Description
      */
-    nTeams = 0;
-    await ScrapingProduct.find({}).then(async scrapingItem => {
-        let pLen = scrapingItem.length;
-        for (let k = nTeams; k < pLen; k ++) {
-            await sleep(200);
-            await console.log("\n Starting Result k = ", 1, scrapingItem[k].link);
-            await gettingResult(k - nTeams + 1, scrapingItem[k]);
-            await console.log("\n ***************************************************************************************\n", "Last Result Stage/", k, "  -->  Completing");
-        }
-    });
+    // nTeams = 0;
+    // await ScrapingProduct.find({}).then(async scrapingItem => {
+    //     let pLen = scrapingItem.length;
+    //     for (let k = nTeams; k < pLen; k ++) {
+    //         await sleep(200);
+    //         await console.log("\n Starting Result k = ", k, scrapingItem[k].link);
+    //         await gettingResult(k + 1, scrapingItem[k]);
+    //         await console.log("\n ***************************************************************************************\n", "Last Result Stage/", k, "  -->  Completing");
+    //     }
+    // });
 
     console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
@@ -277,7 +277,7 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
                         // console.log("TeamB = ", sTeamB);
                         console.log("FinalScore = ", finalScore);
 
-                        const scraping_data = await new ScrapingProduct({
+                        const scraping_data = await new Filter({
                             id: t,
                             link: lastLink.trim(),
                             category: sCategory.trim(),
@@ -521,9 +521,11 @@ async function gettingResult(m, pStr) {
                 }
 
 
-                await driver.wait(until.elementLocated(By.id("detail-bookmarks")));
-                let sMenu = await driver.findElement(By.id("detail-bookmarks")).getAttribute('innerHTML');
+                await driver.wait(until.elementLocated(By.css("ul.ifmenu")));
+                let sMenu = await driver.findElement(By.css("ul.ifmenu")).getAttribute('innerHTML');
                 let deepMenu;
+
+                //console.log("1111111111111", sMenu);
                 /**
                  * Odds 1x2
                  */
@@ -532,10 +534,15 @@ async function gettingResult(m, pStr) {
                         let oddsLink = lastLink.replace("/#informazioni-partita", "/#comparazione-quote;quote-1x2;finale");
                         await driver.get(oddsLink);
 
-                        // await driver.wait(until.elementLocated(By.id("odds-comparison-content")));
-                        // deepMenu = await driver.findElement(By.id("odds-comparison-content")).getAttribute('innerHTML');
-                        // console.log(deepMenu);
+                        await driver.wait(until.elementLocated(By.css("div.odds-comparison-bookmark.ifmenu-wrapper")));
+                        deepMenu = await driver.findElement(By.css("div.odds-comparison-bookmark.ifmenu-wrapper")).getAttribute('innerHTML');
 
+                        //console.log('2222222222222222', deepMenu);
+
+                        console.log(deepMenu.includes("1 X 2"));
+                        console.log(deepMenu.includes("O/U"));
+                        console.log(deepMenu.includes("Gol"));
+                        if(deepMenu.includes("1 X 2") === true) {
                             await driver.wait(until.elementLocated(By.id("odds_1x2")));
                             let sFinal = await driver.findElements(By.css("span.odds-wrap"));
 
@@ -563,6 +570,7 @@ async function gettingResult(m, pStr) {
                             odds[0] = 300 * odds[0]/array.length; odds[0] = Math.floor(odds[0]) / 100;
 
                             final1X2 = odds[1].toString() + " : " + odds[2].toString() + " : " + odds[0].toString();
+                        }
 
                     } catch {
                         console.log("Odds Error 2 !");
@@ -576,7 +584,7 @@ async function gettingResult(m, pStr) {
                 /**
                  * Over/Under
                  */
-                if(sMenu.includes('Comparazione quote') === true) {
+                if((sMenu.includes('Comparazione quote') === true) && (deepMenu.includes("O/U") === true)) {
                     try {
                         let oddsLink = await lastLink.replace("/#informazioni-partita", "/#comparazione-quote;over-under;finale");
 
@@ -618,7 +626,7 @@ async function gettingResult(m, pStr) {
                 /**
                  * Gol
                  */
-                if(sMenu.includes('Comparazione quote') === true) {
+                if((sMenu.includes('Comparazione quote') === true) && (deepMenu.includes("Gol") === true)) {
                     try {
                         let oddsLink = await lastLink.replace("/#informazioni-partita", "/#comparazione-quote;gol-no-gol;finale");
 
