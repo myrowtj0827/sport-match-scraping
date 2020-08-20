@@ -111,30 +111,31 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Last Link
      */
-    nSeason = 1279;
-    await ScrapingProduct.find({}).then(async scrapingItem => {
-        let pLen = scrapingItem.length;
-        for (let k = nSeason; k < 1350; k ++) {
-            lastStage = true;
-            await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
-            await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
-            await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
-        }
-    });
+    // nSeason = 1401;
+    // nSeason = 1401;
+    // await ScrapingProduct.find({}).then(async scrapingItem => {
+    //     let pLen = scrapingItem.length;
+    //     for (let k = nSeason; k < pLen; k ++) {
+    //         lastStage = true;
+    //         await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
+    //         await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
+    //         await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
+    //     }
+    // });
 
     /**
      * Getting Description
      */
-    // nTeams = 0;
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = nTeams; k < pLen; k ++) {
-    //         await sleep(200);
-    //         await console.log("\n Starting Result k = ", k, scrapingItem[k].link);
-    //         await gettingResult(k + 1, scrapingItem[k]);
-    //         await console.log("\n ***************************************************************************************\n", "Last Result Stage/", k, "  -->  Completing");
-    //     }
-    // });
+    nTeams = 0;
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nTeams; k < 4148; k ++) {
+            await sleep(200);
+            await console.log("\n Starting Result k = ", k, scrapingItem[k].link);
+            await gettingResult(k + 1, scrapingItem[k]);
+            await console.log("\n ***************************************************************************************\n", "Last Result Stage/", k, "  -->  Completing");
+        }
+    });
 
     console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
@@ -204,13 +205,19 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
                 await driver.get(bUrl);
 
                 try {
-                    let mError = await driver.findElement(By.className('nmf__title')).getAttribute('innerHTML');
+                    let mError = await driver.findElement(By.className('nmf__title')).getAttribute('innerHTML');console.log("***********22********");
                     if(mError === "Nessun incontro trovato.") {
                         await driver.quit();
                         return 0;
                     }
                 } catch (e) {
+                    await sleep(300);
                 }
+
+
+                await sleep(1000);
+                driver.navigate().to(driver.getCurrentUrl());
+                // console.log("=======", await (await driver).getCurrentUrl());
 
                 await driver.wait(until.elementLocated(By.className(matchStr)));
                 let sMatch = await driver.findElement(By.className(matchStr)).getAttribute('innerHTML');
@@ -384,7 +391,14 @@ async function gettingResult(m, pStr) {
                     .build();
 
                 await driver.get(lastLink);
-                await driver.wait(until.elementLocated(By.id("detcon")));
+
+                await sleep(300);
+                driver.navigate().to(driver.getCurrentUrl());
+                // console.log("=======", await (await driver).getCurrentUrl());
+
+                // await sleep(300);
+                // await driver.navigate().to(driver.getCurrentUrl());
+
 
                 await driver.wait(until.elementLocated(By.id("utime")));
 
@@ -397,11 +411,22 @@ async function gettingResult(m, pStr) {
                 timeScored_firstHalf = "";
                 timeScored_secondHalf = "";
 
-                let aList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--home"));
-                let bList = await driver.findElements(By.css("div.detailMS__incidentRow.incidentRow--away"));
+                await sleep(300);
+                driver.navigate().to(driver.getCurrentUrl());
+
+                // await driver.wait(until.elementLocated(By.id("secret_hash")));
+                await driver.wait(until.elementLocated(By.id("tab-match-odds-comparison")));
+
+                let aList = await driver.findElements(By.css("div.incidentRow--home"));
+                console.log(aList.length);
+
+                let bList = await driver.findElements(By.css("div.incidentRow--away"));
+                console.log(bList.length);
+
 
                 for(let e of aList) {
                     try {
+                        console.log("-=================--");
                         let aa = await e.findElement(By.className("soccer-ball")).getText();
                         if(aa.length === 1) {
                             let a;
@@ -520,12 +545,17 @@ async function gettingResult(m, pStr) {
                     } catch {}
                 }
 
+                //console.log(timeScored_secondHalf, "***=================*********", timeScored_firstHalf);
 
-                await driver.wait(until.elementLocated(By.css("ul.ifmenu")));
+                await sleep(300);
+                driver.navigate().to(driver.getCurrentUrl());
+
+                await driver.wait(until.elementLocated(By.id("tab-match-summary")));
                 let sMenu = await driver.findElement(By.css("ul.ifmenu")).getAttribute('innerHTML');
                 let deepMenu;
 
                 //console.log("1111111111111", sMenu);
+
                 /**
                  * Odds 1x2
                  */
@@ -534,8 +564,8 @@ async function gettingResult(m, pStr) {
                         let oddsLink = lastLink.replace("/#informazioni-partita", "/#comparazione-quote;quote-1x2;finale");
                         await driver.get(oddsLink);
 
-                        await driver.wait(until.elementLocated(By.css("div.odds-comparison-bookmark.ifmenu-wrapper")));
-                        deepMenu = await driver.findElement(By.css("div.odds-comparison-bookmark.ifmenu-wrapper")).getAttribute('innerHTML');
+                        await driver.wait(until.elementLocated(By.id("bookmark-both-teams-to-score")));
+                        deepMenu = await driver.findElement(By.id("tab-match-odds-comparison")).getAttribute('innerHTML');
 
                         //console.log('2222222222222222', deepMenu);
 
@@ -708,7 +738,6 @@ async function gettingResult(m, pStr) {
         return 0;
     }
 }
-
 
 function sleep(milliseconds) {
     let timeStart = new Date().getTime();
