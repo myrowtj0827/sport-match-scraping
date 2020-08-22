@@ -111,30 +111,30 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Last Link
      */
-    //nSeason = 1782;
     // nSeason = 1782;
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = nSeason; k < pLen; k ++) {
-    //         //lastStage = true;
-    //         await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
-    //         await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
-    //         await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
-    //     }
-    // });
+    nSeason = 1858;
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nSeason; k < pLen; k ++) {
+            lastStage = true;
+            await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
+            await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
+            await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
+        }
+    });
 
     /**
      * Getting Description
      */
-    nTeams = 1; // completing
-
-    await ScrapingProduct.find({}).then(async scrapingItem => {
-        let pLen = scrapingItem.length;
-        for (let k = nTeams; k < 2000; k ++) {
-            await console.log("\n ***************************************************************************************\ Starting k = ", k, scrapingItem[k].link);
-            await gettingResult(k + 1, scrapingItem[k]);
-        }
-    });
+    // nTeams = 760; // completing
+    //
+    // await ScrapingProduct.find({}).then(async scrapingItem => {
+    //     let pLen = scrapingItem.length;
+    //     for (let k = nTeams; k < 2000; k ++) {
+    //         await console.log("\n ***************************************************************************************\ Starting k = ", k, scrapingItem[k].link);
+    //         await gettingResult(k + 1, scrapingItem[k]);
+    //     }
+    // });
 
     console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
