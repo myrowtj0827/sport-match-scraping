@@ -36,12 +36,12 @@ let pStage = 0;
 
 
 router.post("/scraping-product", async (req, res) => {
-    await console.log("--------------- success  ----------------");
+    // await console.log("--------------- success  ----------------");
 
     // await goLink.slice(0, goLink.length);
     // goLink[0] = baseUrl;
 
-    //await initializeDB(pStage);
+    // await initializeDB(pStage);
 
     // await ScrapingProduct.find({}).then(async scrapingItem => {
     //     for(let k = 0; k < scrapingItem.length; k ++) {
@@ -61,9 +61,9 @@ router.post("/scraping-product", async (req, res) => {
     // console.log("nCategory = ", nCategory);
     // // nCategory = 35;
 
-    // /**
-    //  * Getting Country
-    //  */
+    /**
+     * Getting Country
+     */
     // await ScrapingProduct.find({}).then(async scrapingItem => {
     //     let pLen = scrapingItem.length;
     //     for (let k = 0; k < pLen; k ++) {
@@ -91,16 +91,16 @@ router.post("/scraping-product", async (req, res) => {
     // nLeague = goLink.length;
     // console.log("nLeague = ", nLeague);
 
-    // // nLeague = 300;
+    // nLeague = 300;
 
-    // /**
-    //  * Getting Season
-    //  */
+    /**
+     * Getting Season
+     */
     // await ScrapingProduct.find({}).then(async scrapingItem => {
     //     let pLen = scrapingItem.length;
     //     for (let k = nCountry; k < pLen; k ++) {
     //         await gettingCategoryLink(0, forthSeason, scrapingItem[k].link + "archivio/");
-    //         console.log("###############", "4Stage/", k, "  -->  ", goLink.length);
+    //         console.log("*******************************************************************************", "4Stage/", k, "  -->  ", goLink.length);
     //     }
     // });
 
@@ -111,12 +111,12 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Last Link
      */
-    // nSeason = 1401;
-    // nSeason = 1401;
+    //nSeason = 1782;
+    // nSeason = 1782;
     // await ScrapingProduct.find({}).then(async scrapingItem => {
     //     let pLen = scrapingItem.length;
     //     for (let k = nSeason; k < pLen; k ++) {
-    //         lastStage = true;
+    //         //lastStage = true;
     //         await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
     //         await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
     //         await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
@@ -126,14 +126,13 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Description
      */
-    nTeams = 35;
+    nTeams = 1; // completing
+
     await ScrapingProduct.find({}).then(async scrapingItem => {
         let pLen = scrapingItem.length;
-        for (let k = nTeams; k < 1000; k ++) {
-            await sleep(200);
-            await console.log("\n Starting Result k = ", k, scrapingItem[k].link);
+        for (let k = nTeams; k < 2000; k ++) {
+            await console.log("\n ***************************************************************************************\ Starting k = ", k, scrapingItem[k].link);
             await gettingResult(k + 1, scrapingItem[k]);
-            await console.log("\n ***************************************************************************************\n", "Last Result Stage/", k, "  -->  Completing");
         }
     });
 
@@ -252,6 +251,9 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
 
                 let sId = "id=\"g_";
                 let n = sMatch.search(sId);
+
+                console.log("n's Testing", n);
+                if(n === -1) throw 0;
 
                 while(n >= 0) {
                     try {
@@ -392,34 +394,37 @@ async function gettingResult(m, pStr) {
 
                 await driver.get(lastLink);
 
-                await sleep(300);
-                driver.navigate().to(driver.getCurrentUrl());
-                // console.log("=======", await (await driver).getCurrentUrl());
-
-                // await sleep(300);
-                // await driver.navigate().to(driver.getCurrentUrl());
-
-
-                await driver.wait(until.elementLocated(By.id("utime")));
-
                 /**
                  * Match Date and Scored time
                  * Getting Scores of 1th and 2nd half
                  */
+                driver.navigate().refresh();
+                await driver.wait(function() {
+                    return driver.findElement(By.id("utime")).isDisplayed();
+                }, 300);
+
                 sDate = await driver.findElement(By.id("utime")).getAttribute('innerHTML');
 
                 timeScored_firstHalf = "";
                 timeScored_secondHalf = "";
 
-                await sleep(300);
-                driver.navigate().to(driver.getCurrentUrl());
-
                 try {
-                    await driver.wait(until.elementLocated(By.className("detailMS")));
-                    await driver.wait(until.elementLocated(By.id("odds-comparison-content")));
+                    driver.navigate().refresh();
+
+                    await driver.wait(function() {
+                        return driver.findElement(By.id("content-all"));
+                    }, 200);
+
+                    await driver.wait(function() {
+                        return driver.findElements(By.css("div.incidentRow--home"));
+                    }, 200);
 
                     let aList = await driver.findElements(By.css("div.incidentRow--home"));
                     console.log(aList.length);
+
+                    await driver.wait(function() {
+                        return driver.findElements(By.css("div.incidentRow--away"));
+                    }, 400);
 
                     let bList = await driver.findElements(By.css("div.incidentRow--away"));
                     console.log(bList.length);
@@ -442,7 +447,7 @@ async function gettingResult(m, pStr) {
                                     }
                                 }
 
-                                if(Number(a.slice(0, a.length - 1)) <= 45) {
+                                if((Number(a.slice(0, a.length - 1)) <= 45) || (a.slice(0, a.length - 1).includes('45') === true)) {
                                     timeScored_firstHalf = timeScored_firstHalf + "A: " + a + ", ";
                                 } else {
                                     timeScored_secondHalf = timeScored_secondHalf + "A: " + a + ", ";
@@ -466,7 +471,7 @@ async function gettingResult(m, pStr) {
                                         }
                                     }
 
-                                    if(Number(a.slice(0, a.length - 1)) <= 45) {
+                                    if((Number(a.slice(0, a.length - 1)) <= 45) || (a.slice(0, a.length - 1).includes('45') === true)) {
                                         timeScored_firstHalf = timeScored_firstHalf + "A: " + a + ", ";
                                     } else {
                                         timeScored_secondHalf = timeScored_secondHalf + "A: " + a + ", ";
@@ -491,7 +496,7 @@ async function gettingResult(m, pStr) {
                                     }
                                 }
 
-                                if(Number(b.slice(0, b.length - 1)) <= 45) {
+                                if((Number(b.slice(0, b.length - 1)) <= 45) || (b.slice(0, b.length - 1).includes('45') === true)) {
                                     timeScored_firstHalf = timeScored_firstHalf + "B: " + b + ", ";
                                 } else {
                                     timeScored_secondHalf = timeScored_secondHalf + "B: " + b + ", ";
@@ -514,7 +519,7 @@ async function gettingResult(m, pStr) {
                                         }
                                     }
 
-                                    if(Number(b.slice(0, b.length - 1)) <= 45) {
+                                    if((Number(b.slice(0, b.length - 1)) <= 45) || (b.slice(0, b.length - 1).includes('45') === true)) {
                                         timeScored_firstHalf = timeScored_firstHalf + "B: " + b + ", ";
                                     } else {
                                         timeScored_secondHalf = timeScored_secondHalf + "B: " + b + ", ";
@@ -558,8 +563,6 @@ async function gettingResult(m, pStr) {
                 let sMenu = await driver.findElement(By.css("ul.ifmenu")).getAttribute('innerHTML');
                 let deepMenu;
 
-                //console.log("1111111111111", sMenu);
-
                 /**
                  * Odds 1x2
                  */
@@ -571,11 +574,7 @@ async function gettingResult(m, pStr) {
                         await driver.wait(until.elementLocated(By.css("div.color-spacer.odds-type-spacer")));
                         deepMenu = await driver.findElement(By.css("div.odds-comparison-bookmark.ifmenu-wrapper")).getAttribute('innerHTML');
 
-                        console.log('2222222222222222', deepMenu);
-
-                        console.log(deepMenu.includes("1 X 2"));
-                        console.log(deepMenu.includes("O/U"));
-                        console.log(deepMenu.includes("Gol"));
+                        console.log(deepMenu.includes("1 X 2"), deepMenu.includes("O/U"), deepMenu.includes("Gol"));
                         if(deepMenu.includes("1 X 2") === true) {
                             await driver.wait(until.elementLocated(By.id("odds_1x2")));
                             let sFinal = await driver.findElements(By.css("span.odds-wrap"));
@@ -613,7 +612,6 @@ async function gettingResult(m, pStr) {
                 } else {
                     final1X2 = "";
                 }
-
 
                 /**
                  * Over/Under
