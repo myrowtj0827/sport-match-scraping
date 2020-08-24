@@ -112,10 +112,10 @@ router.post("/scraping-product", async (req, res) => {
      * Getting Last Link
      */
     //nSeason = 3406;
-    nSeason = 3406;
+    nSeason = 3509;
     await ScrapingProduct.find({}).then(async scrapingItem => {
         let pLen = scrapingItem.length;
-        for (let k = nSeason; k < pLen; k ++) {
+        for (let k = nSeason; k < 4500; k ++) {
             lastStage = true;
             await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
             await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
