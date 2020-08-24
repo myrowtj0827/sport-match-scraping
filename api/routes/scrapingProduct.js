@@ -111,8 +111,8 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Last Link
      */
-    // nSeason = 1782;
-    nSeason = 1858;
+    //nSeason = 3406;
+    nSeason = 3406;
     await ScrapingProduct.find({}).then(async scrapingItem => {
         let pLen = scrapingItem.length;
         for (let k = nSeason; k < pLen; k ++) {
@@ -126,15 +126,19 @@ router.post("/scraping-product", async (req, res) => {
     /**
      * Getting Description
      */
-    // nTeams = 760; // completing
-    //
+    //nTeams = 2599; // completing
+    // nTeams = 2599;
     // await ScrapingProduct.find({}).then(async scrapingItem => {
     //     let pLen = scrapingItem.length;
-    //     for (let k = nTeams; k < 2000; k ++) {
-    //         await console.log("\n ***************************************************************************************\ Starting k = ", k, scrapingItem[k].link);
+    //     for (let k = nTeams; k < pLen; k ++) {
+    //         await console.log("\n ***************************************************************************************\n Starting k = ", k, scrapingItem[k].link);
     //         await gettingResult(k + 1, scrapingItem[k]);
     //     }
     // });
+
+
+
+
 
     console.log(" ===============  Whole Scraping Done !!!!! =============");
     return res.status(200).json("scraping_Product");
@@ -266,25 +270,10 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
 
                         lastLink = baseUrl + "partita/" + lastLink + "/#informazioni-partita/";
                         console.log('\n LastLink = ', lastLink);
-
-                        /**
-                         * Description Information
-                         */
-                        const result = await axios.get(lastLink);
-                        let $ = await cheerio.load(result.data);
-
-                        sTeamA = $("div.team-text.tname-home > div > div > a").text();
-                        sTeamB = $("div.team-text.tname-away > div > div > a").text();
-                        finalScore = $("div.match-info > div.current-result").text().trim();
                         nCount += 1;
 
                         let t = (iM).toString() + "-" + (nCount).toString();
 
-                        console.log(" id = ", t);
-                        // console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
-                        // console.log("TeamA = ", sTeamA);
-                        // console.log("TeamB = ", sTeamB);
-                        console.log("FinalScore = ", finalScore);
 
                         const scraping_data = await new Filter({
                             id: t,
@@ -292,9 +281,6 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
                             category: sCategory.trim(),
                             country: sCountry.trim(),
                             league: sLeague.trim(),
-                            teamA: sTeamA.trim(),
-                            teamB: sTeamB.trim(),
-                            finalScore: finalScore.trim(),
                         });
                         await scraping_data.save();
 
@@ -371,14 +357,25 @@ async function gettingResult(m, pStr) {
 
             let lastLink = pStr.link;
             let sDate;
-            let sTeamA = pStr.teamA;
-            let sTeamB = pStr.teamB;
-            let finalScore = pStr.finalScore;
+            let sTeamA;
+            let sTeamB;
+            let finalScore;
             let timeScored_firstHalf = "";
             let timeScored_secondHalf = "";
             let final1X2 = "";
             let overUnder;
             let gol;
+
+            /**
+             * Description Infomation
+             */
+            const result = await axios.get(lastLink);
+            let $ = await cheerio.load(result.data);
+            sTeamA = $("div.team-text.tname-home > div > div > a").text();
+            sTeamB = $("div.team-text.tname-away > div > div > a").text();
+            finalScore = $("div.match-info > div.current-result").text().trim();
+
+            console.log('\n', sTeamA, ' / ', sTeamB, '\n', finalScore);
 
             try {
                 /**
@@ -404,63 +401,49 @@ async function gettingResult(m, pStr) {
                 }, 300);
 
                 sDate = await driver.findElement(By.id("utime")).getAttribute('innerHTML');
-
+                console.log("sDate = ", sDate);
                 timeScored_firstHalf = "";
                 timeScored_secondHalf = "";
 
                 try {
-                    driver.navigate().refresh();
+                    let aList = [], bList = [];
+                    let nGoal = finalScore.split('-');
 
-                    await driver.wait(function() {
-                        return driver.findElement(By.id("content-all"));
-                    }, 200);
+                    if((nGoal[0] === '0') && (nGoal[1] === '0')) {
+                        timeScored_secondHalf = '0-0';
+                        timeScored_firstHalf = '0-0';
+                        throw '0:0 -> OK';
+                    } else {
+                        driver.navigate().refresh();
+                        await driver.wait(function() {
+                            return driver.findElement(By.id("content-all"));
+                        }, 200);
 
-                    await driver.wait(function() {
-                        return driver.findElements(By.css("div.incidentRow--home"));
-                    }, 200);
+                        if(nGoal[0] !== '0') {
+                            await driver.wait(function() {
+                                return driver.findElements(By.css("div.incidentRow--home"));
+                            }, 200);
 
-                    let aList = await driver.findElements(By.css("div.incidentRow--home"));
-                    console.log(aList.length);
+                            aList = await driver.findElements(By.css("div.incidentRow--home"));
 
-                    await driver.wait(function() {
-                        return driver.findElements(By.css("div.incidentRow--away"));
-                    }, 400);
+                            console.log('A:', aList.length);
+                        }
 
-                    let bList = await driver.findElements(By.css("div.incidentRow--away"));
-                    console.log(bList.length);
+                        if(nGoal[1] !== '0') {
+                            await driver.wait(function() {
+                                return driver.findElements(By.css("div.incidentRow--away"));
+                            }, 200);
 
-                    if(aList.length + bList.length === 0) {
-                        throw false;
+                            bList = await driver.findElements(By.css("div.incidentRow--away"));
+                            console.log("B: ", bList.length);
+                        }
                     }
 
-                    for(let e of aList) {
-                        try {
-                            let aa = await e.findElement(By.className("soccer-ball")).getText();
-                            if(aa.length === 1) {
-                                let a;
-                                try {
-                                    a = await e.findElement(By.css("div.time-box")).getText();
-                                } catch {
-                                    try {
-                                        a = await e.findElement(By.css("div.time-box-wide")).getText();
-                                    } catch (e) {
-                                    }
-                                }
-
-                                if((Number(a.slice(0, a.length - 1)) <= 45) || (a.slice(0, a.length - 1).includes('45') === true)) {
-                                    timeScored_firstHalf = timeScored_firstHalf + "A: " + a + ", ";
-                                } else {
-                                    timeScored_secondHalf = timeScored_secondHalf + "A: " + a + ", ";
-                                }
-                            }
-                        } catch {
+                    if(aList.length !== 0) {
+                        for(let e of aList) {
                             try {
-                                /**
-                                 * oneself Goal
-                                 */
-                                let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
-                                if(ownGoal.length === 1) {
-
+                                let aa = await e.findElement(By.className("soccer-ball")).getText();
+                                if(aa.length === 1) {
                                     let a;
                                     try {
                                         a = await e.findElement(By.css("div.time-box")).getText();
@@ -477,38 +460,42 @@ async function gettingResult(m, pStr) {
                                         timeScored_secondHalf = timeScored_secondHalf + "A: " + a + ", ";
                                     }
                                 }
-                            } catch (e) {
+                            } catch {
+                                try {
+                                    /**
+                                     * oneself Goal
+                                     */
+                                    let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
+                                    if(ownGoal.length === 1) {
+
+                                        let a;
+                                        try {
+                                            a = await e.findElement(By.css("div.time-box")).getText();
+                                        } catch {
+                                            try {
+                                                a = await e.findElement(By.css("div.time-box-wide")).getText();
+                                            } catch (e) {
+                                            }
+                                        }
+
+                                        if((Number(a.slice(0, a.length - 1)) <= 45) || (a.slice(0, a.length - 1).includes('45') === true)) {
+                                            timeScored_firstHalf = timeScored_firstHalf + "A: " + a + ", ";
+                                        } else {
+                                            timeScored_secondHalf = timeScored_secondHalf + "A: " + a + ", ";
+                                        }
+                                    }
+                                } catch (e) {
+                                }
                             }
                         }
+                        //throw false;
                     }
 
-                    for(let e of bList) {
-                        try {
-                            let bb = await e.findElement(By.className("soccer-ball")).getText();
-                            if(bb.length === 1) {
-                                let b;
-                                try {
-                                    b = await e.findElement(By.css("div.time-box")).getText();
-                                } catch {
-                                    try {
-                                        b = await e.findElement(By.css("div.time-box-wide")).getText();
-                                    } catch (e) {
-                                    }
-                                }
-
-                                if((Number(b.slice(0, b.length - 1)) <= 45) || (b.slice(0, b.length - 1).includes('45') === true)) {
-                                    timeScored_firstHalf = timeScored_firstHalf + "B: " + b + ", ";
-                                } else {
-                                    timeScored_secondHalf = timeScored_secondHalf + "B: " + b + ", ";
-                                }
-                            }
-                        } catch {
+                    if (bList.length !== 0) {
+                        for(let e of bList) {
                             try {
-                                /**
-                                 * oneself Goal
-                                 */
-                                let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
-                                if(ownGoal.length === 1) {
+                                let bb = await e.findElement(By.className("soccer-ball")).getText();
+                                if(bb.length === 1) {
                                     let b;
                                     try {
                                         b = await e.findElement(By.css("div.time-box")).getText();
@@ -525,7 +512,31 @@ async function gettingResult(m, pStr) {
                                         timeScored_secondHalf = timeScored_secondHalf + "B: " + b + ", ";
                                     }
                                 }
-                            } catch (e) {
+                            } catch {
+                                try {
+                                    /**
+                                     * oneself Goal
+                                     */
+                                    let ownGoal = await e.findElement(By.className("soccer-ball-own")).getText();
+                                    if(ownGoal.length === 1) {
+                                        let b;
+                                        try {
+                                            b = await e.findElement(By.css("div.time-box")).getText();
+                                        } catch {
+                                            try {
+                                                b = await e.findElement(By.css("div.time-box-wide")).getText();
+                                            } catch (e) {
+                                            }
+                                        }
+
+                                        if((Number(b.slice(0, b.length - 1)) <= 45) || (b.slice(0, b.length - 1).includes('45') === true)) {
+                                            timeScored_firstHalf = timeScored_firstHalf + "B: " + b + ", ";
+                                        } else {
+                                            timeScored_secondHalf = timeScored_secondHalf + "B: " + b + ", ";
+                                        }
+                                    }
+                                } catch (e) {
+                                }
                             }
                         }
                     }
@@ -533,11 +544,23 @@ async function gettingResult(m, pStr) {
                     if(timeScored_firstHalf !== "") {
                         timeScored_firstHalf = timeScored_firstHalf.slice(0, timeScored_firstHalf.length - 2);
                     } else {
+
                         try{
-                            await driver.wait(until.elementLocated(By.css("div.detailMS__incidentsHeader.stage-12")));
+                            await driver.wait(function() {
+                                return driver.findElements(By.css("div.detailMS__incidentsHeader.stage-12"));
+                            }, 200);
+
+                            //await driver.wait(until.elementLocated(By.css("div.detailMS__incidentsHeader.stage-12")));
+
                             timeScored_firstHalf = await driver.findElement(By.css("div.detailMS__incidentsHeader.stage-12"));
+
+                            console.log(timeScored_firstHalf);
+
                             timeScored_firstHalf = await timeScored_firstHalf.findElement(By.className("detailMS__headerScore")).getText();
-                        } catch {}
+                        } catch(e) {
+                            console.log(e.name);
+                            if (e.name === "NoSuchElementError") throw "NoSuchElementError";
+                        }
                     }
 
                     if(timeScored_secondHalf !== "") {
@@ -547,17 +570,15 @@ async function gettingResult(m, pStr) {
                             await driver.wait(until.elementLocated(By.css("div.detailMS__incidentsHeader.stage-13")));
                             timeScored_secondHalf = await driver.findElement(By.css("div.detailMS__incidentsHeader.stage-13"));
                             timeScored_secondHalf = await timeScored_secondHalf.findElement(By.className("detailMS__headerScore")).getText();
-                        } catch {}
+                        } catch(e) {console.log("BBBBB: =", e);}
                     }
 
-                    //console.log(timeScored_secondHalf, "***=================*********", timeScored_firstHalf);
                 } catch(error) {
-
                     console.log(error);
                 }
 
                 await sleep(300);
-                driver.navigate().to(driver.getCurrentUrl());
+                await driver.navigate().to(driver.getCurrentUrl());
 
                 await driver.wait(until.elementLocated(By.id("tab-match-summary")));
                 let sMenu = await driver.findElement(By.css("ul.ifmenu")).getAttribute('innerHTML');
@@ -698,16 +719,16 @@ async function gettingResult(m, pStr) {
 
                 await driver.quit();
 
-                console.log("Category = ", sCategory, " \n sCountry = ", sCountry, "\n sLeague = ", sLeague);
-                console.log("Match Date = ", sDate);
-                console.log("TeamA = ", sTeamA);
-                console.log("TeamB = ", sTeamB);
-                console.log("FinalScore = ", finalScore);
+                console.log(" Category = ", sCategory, " \n sCountry = ", sCountry, "\n  sLeague = ", sLeague);
+                console.log("Match Date= ", sDate);
+                console.log("    TeamA = ", sTeamA);
+                console.log("    TeamB = ", sTeamB);
+                console.log("FinalScore= ", finalScore);
                 console.log("TimeScored_firstHalf = ", timeScored_firstHalf);
                 console.log("TimeScored_secondHalf = ", timeScored_secondHalf);
-                console.log("Final odds = ", final1X2);
-                console.log("Over/Under = ", overUnder);
-                console.log("Gol = ", gol);
+                console.log("Final odds= ", final1X2);
+                console.log("Over/Under= ", overUnder);
+                console.log("      Gol = ", gol);
 
                 const scraping_data = await new Filter({
                     id: m,
@@ -719,8 +740,8 @@ async function gettingResult(m, pStr) {
                     teamA: sTeamA.trim(),
                     teamB: sTeamB.trim(),
                     finalScore: finalScore.trim(),
-                    historiesFirstHalf: timeScored_firstHalf,
-                    historiesSecondHalf: timeScored_secondHalf,
+                    historiesFirstHalf: timeScored_firstHalf.trim(),
+                    historiesSecondHalf: timeScored_secondHalf.trim(),
                     final1X2: final1X2.trim(),
                     overUnder: overUnder.trim(),
                     gol: gol.trim(),
@@ -728,6 +749,7 @@ async function gettingResult(m, pStr) {
                 await scraping_data.save();
             } catch (e) {
                 await driver.quit();
+                return 0;
             }
 
         } catch (e) {
@@ -740,7 +762,6 @@ async function gettingResult(m, pStr) {
         return 0;
     }
 }
-
 
 function sleep(milliseconds) {
     let timeStart = new Date().getTime();

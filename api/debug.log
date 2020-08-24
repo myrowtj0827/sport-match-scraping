@@ -1213,3 +1213,15 @@
 [0822/180937.403:ERROR:exception_snapshot_win.cc(98)] thread ID 30208 not found in process
 [0822/180937.417:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0822/180937.417:ERROR:exception_snapshot_win.cc(98)] thread ID 21292 not found in process
+[0824/072642.455:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0824/072642.571:ERROR:exception_snapshot_win.cc(98)] thread ID 273008 not found in process
+[0824/072642.687:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0824/072642.687:ERROR:exception_snapshot_win.cc(98)] thread ID 33348 not found in process
+[0824/072642.695:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0824/072642.695:ERROR:exception_snapshot_win.cc(98)] thread ID 230828 not found in process
+[0824/193058.137:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0824/193058.225:ERROR:exception_snapshot_win.cc(98)] thread ID 347448 not found in process
+[0824/193058.342:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0824/193058.342:ERROR:exception_snapshot_win.cc(98)] thread ID 356816 not found in process
+[0824/193058.356:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0824/193058.356:ERROR:exception_snapshot_win.cc(98)] thread ID 356208 not found in process
