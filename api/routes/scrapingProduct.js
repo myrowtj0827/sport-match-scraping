@@ -22,7 +22,6 @@ let thirdLeague = "div.mbox0px > ul.menu.selected-country-list > li > a";
 let forthSeason = "div.leagueTable__season > div.leagueTable__seasonName > a";
 let fifthMatch = "sportName";
 
-
 let nCategory = 0;
 let nCountry = 0;
 let nLeague = 0;
@@ -112,29 +111,29 @@ router.post("/scraping-product", async (req, res) => {
      * Getting Last Link
      */
     //nSeason = 3406;
-    nSeason = 3509;
-    await ScrapingProduct.find({}).then(async scrapingItem => {
-        let pLen = scrapingItem.length;
-        for (let k = nSeason; k < 4500; k ++) {
-            lastStage = true;
-            await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
-            await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
-            await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
-        }
-    });
+    // nSeason = 9400;
+    // await ScrapingProduct.find({}).then(async scrapingItem => {
+    //     let pLen = scrapingItem.length;
+    //     for (let k = nSeason; k < pLen; k ++) {
+    //         lastStage = true;
+    //         await console.log("Starting 5Stage k = ", k, '\n', scrapingItem[k].link);
+    //         await gettingCategoryLink(k, fifthMatch, scrapingItem[k].link + "risultati/");
+    //         await console.log("\n ***************************************************************************************\n", "5 Stage/", k, "  -->  Completing");
+    //     }
+    // });
 
     /**
      * Getting Description
      */
-    //nTeams = 2599; // completing
-    // nTeams = 2599;
-    // await ScrapingProduct.find({}).then(async scrapingItem => {
-    //     let pLen = scrapingItem.length;
-    //     for (let k = nTeams; k < pLen; k ++) {
-    //         await console.log("\n ***************************************************************************************\n Starting k = ", k, scrapingItem[k].link);
-    //         await gettingResult(k + 1, scrapingItem[k]);
-    //     }
-    // });
+    //nTeams = 35000; // completing
+    nTeams = 35000;
+    await ScrapingProduct.find({}).then(async scrapingItem => {
+        let pLen = scrapingItem.length;
+        for (let k = nTeams; k < 37500; k ++) {
+            await console.log("\n ***************************************************************************************\n Starting k = ", k, scrapingItem[k].link);
+            await gettingResult(k + 1, scrapingItem[k]);
+        }
+    });
 
 
 
@@ -218,7 +217,6 @@ async function gettingCategoryLink(iM, matchStr, bUrl) {
                 }
 
 
-                await sleep(1000);
                 driver.navigate().to(driver.getCurrentUrl());
                 // console.log("=======", await (await driver).getCurrentUrl());
 
@@ -389,21 +387,32 @@ async function gettingResult(m, pStr) {
                     .forBrowser('chrome')
                     .build();
 
-                await driver.get(lastLink);
+                 await driver.get(lastLink);
 
                 /**
                  * Match Date and Scored time
                  * Getting Scores of 1th and 2nd half
                  */
                 driver.navigate().refresh();
-                await driver.wait(function() {
-                    return driver.findElement(By.id("utime")).isDisplayed();
-                }, 300);
+
+                try {
+                    await driver.wait(function() {
+                        return driver.findElement(By.id("utime")).isDisplayed();
+                    }, 300);
+                } catch (e) {
+                    if(e.name === "NoSuchElementError")
+                    {
+                        await driver.quit();
+                        throw e;
+                    }
+                }
 
                 sDate = await driver.findElement(By.id("utime")).getAttribute('innerHTML');
                 console.log("sDate = ", sDate);
                 timeScored_firstHalf = "";
                 timeScored_secondHalf = "";
+
+                console.log("######################");
 
                 try {
                     let aList = [], bList = [];
@@ -414,35 +423,46 @@ async function gettingResult(m, pStr) {
                         timeScored_firstHalf = '0-0';
                         throw '0:0 -> OK';
                     } else {
-                        driver.navigate().refresh();
-                        await driver.wait(function() {
-                            return driver.findElement(By.id("content-all"));
-                        }, 200);
+                        try {
+                            //driver.navigate().refresh();
+                            await driver.wait(until.elementLocated(By.className("detailMS__incidentsHeader")));
 
-                        if(nGoal[0] !== '0') {
-                            await driver.wait(function() {
-                                return driver.findElements(By.css("div.incidentRow--home"));
-                            }, 200);
+                            if(nGoal[0] !== '0') {
+                                aList = await driver.findElements(By.className("incidentRow--home"));
+                                console.log('A:', aList.length);
+                            }
 
-                            aList = await driver.findElements(By.css("div.incidentRow--home"));
+                            if(nGoal[1] !== '0') {
+                                bList = await driver.findElements(By.className("incidentRow--away"));
+                                console.log("B: ", bList.length);
+                            }
 
-                            console.log('A:', aList.length);
-                        }
+                        } catch (e) {
 
-                        if(nGoal[1] !== '0') {
-                            await driver.wait(function() {
-                                return driver.findElements(By.css("div.incidentRow--away"));
-                            }, 200);
-
-                            bList = await driver.findElements(By.css("div.incidentRow--away"));
-                            console.log("B: ", bList.length);
                         }
                     }
 
                     if(aList.length !== 0) {
                         for(let e of aList) {
                             try {
-                                let aa = await e.findElement(By.className("soccer-ball")).getText();
+                                let aa;
+
+                                try{
+                                    await driver.wait(function() {
+                                        return driver.findElement(By.className("soccer-ball")).isDisplayed();
+                                    }, 300);
+
+                                    aa = await e.findElement(By.className("soccer-ball")).getText();
+                                } catch (e) {
+                                    if(e.name === "NoSuchElementError"){
+                                        throw e;
+                                    }
+                                }
+
+                                if(e.name === "NoSuchElementError"){
+                                    throw e;
+                                }
+
                                 if(aa.length === 1) {
                                     let a;
                                     try {
@@ -460,7 +480,8 @@ async function gettingResult(m, pStr) {
                                         timeScored_secondHalf = timeScored_secondHalf + "A: " + a + ", ";
                                     }
                                 }
-                            } catch {
+                            } catch(e) {
+
                                 try {
                                     /**
                                      * oneself Goal
@@ -486,6 +507,10 @@ async function gettingResult(m, pStr) {
                                     }
                                 } catch (e) {
                                 }
+
+                                if(e.name === "NoSuchElementError"){
+                                    continue;
+                                }
                             }
                         }
                         //throw false;
@@ -494,7 +519,24 @@ async function gettingResult(m, pStr) {
                     if (bList.length !== 0) {
                         for(let e of bList) {
                             try {
-                                let bb = await e.findElement(By.className("soccer-ball")).getText();
+                                let bb;
+
+                                try{
+                                    await driver.wait(function() {
+                                        return driver.findElement(By.className("soccer-ball")).isDisplayed();
+                                    }, 300);
+
+                                    bb = await e.findElement(By.className("soccer-ball")).getText();
+                                } catch (e) {
+                                    if(e.name === "NoSuchElementError"){
+                                        throw e;
+                                    }
+                                }
+
+                                if(e.name === "NoSuchElementError"){
+                                    throw e;
+                                }
+
                                 if(bb.length === 1) {
                                     let b;
                                     try {
@@ -506,13 +548,14 @@ async function gettingResult(m, pStr) {
                                         }
                                     }
 
+
                                     if((Number(b.slice(0, b.length - 1)) <= 45) || (b.slice(0, b.length - 1).includes('45') === true)) {
                                         timeScored_firstHalf = timeScored_firstHalf + "B: " + b + ", ";
                                     } else {
                                         timeScored_secondHalf = timeScored_secondHalf + "B: " + b + ", ";
                                     }
                                 }
-                            } catch {
+                            } catch(e) {
                                 try {
                                     /**
                                      * oneself Goal
@@ -537,6 +580,10 @@ async function gettingResult(m, pStr) {
                                     }
                                 } catch (e) {
                                 }
+
+                                if(e.name === "NoSuchElementError"){
+                                    continue;
+                                }
                             }
                         }
                     }
@@ -551,15 +598,12 @@ async function gettingResult(m, pStr) {
                             }, 200);
 
                             //await driver.wait(until.elementLocated(By.css("div.detailMS__incidentsHeader.stage-12")));
-
                             timeScored_firstHalf = await driver.findElement(By.css("div.detailMS__incidentsHeader.stage-12"));
-
                             console.log(timeScored_firstHalf);
 
                             timeScored_firstHalf = await timeScored_firstHalf.findElement(By.className("detailMS__headerScore")).getText();
                         } catch(e) {
-                            console.log(e.name);
-                            if (e.name === "NoSuchElementError") throw "NoSuchElementError";
+                             if (e.name === "NoSuchElementError") throw e;
                         }
                     }
 
@@ -567,18 +611,23 @@ async function gettingResult(m, pStr) {
                         timeScored_secondHalf = timeScored_secondHalf.slice(0, timeScored_secondHalf.length - 2);
                     } else {
                         try {
-                            await driver.wait(until.elementLocated(By.css("div.detailMS__incidentsHeader.stage-13")));
+                            await driver.wait(function() {
+                                return driver.findElements(By.css("div.detailMS__incidentsHeader.stage-13"));
+                            }, 200);
+
+                            //await driver.wait(until.elementLocated(By.css("div.detailMS__incidentsHeader.stage-13")));
                             timeScored_secondHalf = await driver.findElement(By.css("div.detailMS__incidentsHeader.stage-13"));
                             timeScored_secondHalf = await timeScored_secondHalf.findElement(By.className("detailMS__headerScore")).getText();
-                        } catch(e) {console.log("BBBBB: =", e);}
+                        } catch(e) {
+                             if (e.name === "NoSuchElementError") throw e;
+                        }
                     }
 
                 } catch(error) {
-                    console.log(error);
+                    console.log(error.name);
                 }
 
-                await sleep(300);
-                await driver.navigate().to(driver.getCurrentUrl());
+                //await driver.navigate().to(driver.getCurrentUrl());
 
                 await driver.wait(until.elementLocated(By.id("tab-match-summary")));
                 let sMenu = await driver.findElement(By.css("ul.ifmenu")).getAttribute('innerHTML');
@@ -666,7 +715,7 @@ async function gettingResult(m, pStr) {
                         }
 
                     } catch(error) {
-                        console.log(error);
+                        console.log(error.name);
                     }
 
                     if(overUnder !== "") {
@@ -707,7 +756,7 @@ async function gettingResult(m, pStr) {
                             gol += "Yes:" + sP[0] + " / " + "No:" + sP[1] + " -/- ";
                         }
                     } catch(error) {
-                        console.log(error);
+                        console.log(error.name);
                     }
 
                     if(gol !== "") {

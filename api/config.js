@@ -8,7 +8,7 @@ module.exports = {
 	 * MongoDB URL from system environment variable "MONGO_URL".
 	 */
 	// MONGO_URL: process.env.MONGO_URL,
-	MONGO_URL: "mongodb://127.0.0.1:27017/ecommerce",
+	MONGO_URL: "mongodb://127.0.0.1:27017/sport",
 	// MONGO_URL: "mongodb+srv://shurenyu:cjy3219891@cluster0-q89pr.azure.mongodb.net/test",
 
 	/**

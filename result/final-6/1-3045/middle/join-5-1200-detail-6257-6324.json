@@ -1,0 +1,761 @@
+[{
+  "_id": {
+    "$oid": "5f468b3f6bb84049f090bbb3"
+  },
+  "id": "6258",
+  "link": "https://www.diretta.it/partita/487K8sKK/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2013-2014",
+  "matchDate": "01.02.2014 01:00",
+  "teamA": "Batna",
+  "teamB": "ASM Oran",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468b7d6bb84049f090bbb4"
+  },
+  "id": "6260",
+  "link": "https://www.diretta.it/partita/MqIF9N4E/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2013-2014",
+  "matchDate": "01.02.2014 01:00",
+  "teamA": "Hussein Dey",
+  "teamB": "MSP Batna",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468bf56bb84049f090bbb5"
+  },
+  "id": "6264",
+  "link": "https://www.diretta.it/partita/ra6O71ZQ/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2013-2014",
+  "matchDate": "01.02.2014 01:00",
+  "teamA": "USM Blida",
+  "teamB": "Medea",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468c126bb84049f090bbb6"
+  },
+  "id": "6265",
+  "link": "https://www.diretta.it/partita/fu31qB6a/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "03.05.2013 23:00",
+  "teamA": "Arba",
+  "teamB": "Annaba",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468cfc6bb84049f090bbb7"
+  },
+  "id": "6268",
+  "link": "https://www.diretta.it/partita/UceEt9jI/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "03.05.2013 23:00",
+  "teamA": "MO Bejaia",
+  "teamB": "Ain Fakroun",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468d1c6bb84049f090bbb8"
+  },
+  "id": "6269",
+  "link": "https://www.diretta.it/partita/r5BUraXo/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "03.05.2013 23:00",
+  "teamA": "MO Constantine",
+  "teamB": "Khroub",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468d726bb84049f090bbb9"
+  },
+  "id": "6271",
+  "link": "https://www.diretta.it/partita/OKfIuT5O/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "03.05.2013 23:00",
+  "teamA": "MSP Batna",
+  "teamB": "Hussein Dey",
+  "finalScore": "1-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468d8c6bb84049f090bbba"
+  },
+  "id": "6272",
+  "link": "https://www.diretta.it/partita/YV15rVL5/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "03.05.2013 23:00",
+  "teamA": "Saida",
+  "teamB": "Medea",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468dd36bb84049f090bbbb"
+  },
+  "id": "6275",
+  "link": "https://www.diretta.it/partita/v9tWTV6C/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "30.04.2013 23:00",
+  "teamA": "Hussein Dey",
+  "teamB": "Mostaganem",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468e8d6bb84049f090bbbc"
+  },
+  "id": "6280",
+  "link": "https://www.diretta.it/partita/nF3cpiig/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "30.04.2013 23:00",
+  "teamA": "USM Blida",
+  "teamB": "MO Bejaia",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468eb46bb84049f090bbbd"
+  },
+  "id": "6281",
+  "link": "https://www.diretta.it/partita/CbtiTbG1/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "19.04.2013 23:00",
+  "teamA": "ASM Oran",
+  "teamB": "Annaba",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468edb6bb84049f090bbbe"
+  },
+  "id": "6282",
+  "link": "https://www.diretta.it/partita/fLvKWXMg/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "19.04.2013 23:00",
+  "teamA": "Merouana",
+  "teamB": "Arba",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468ef16bb84049f090bbbf"
+  },
+  "id": "6283",
+  "link": "https://www.diretta.it/partita/CdkFXD7m/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "19.04.2013 23:00",
+  "teamA": "MO Bejaia",
+  "teamB": "Mohammadia SA",
+  "finalScore": "6-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468f0a6bb84049f090bbc0"
+  },
+  "id": "6284",
+  "link": "https://www.diretta.it/partita/Q1peSIV7/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "19.04.2013 23:00",
+  "teamA": "MO Constantine",
+  "teamB": "Medea",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468f246bb84049f090bbc1"
+  },
+  "id": "6285",
+  "link": "https://www.diretta.it/partita/6cNsjMNE/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "19.04.2013 23:00",
+  "teamA": "Mostaganem",
+  "teamB": "Ain Fakroun",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468f3e6bb84049f090bbc2"
+  },
+  "id": "6286",
+  "link": "https://www.diretta.it/partita/S6Owi288/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "19.04.2013 23:00",
+  "teamA": "MSP Batna",
+  "teamB": "Temouchent",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468f7c6bb84049f090bbc3"
+  },
+  "id": "6288",
+  "link": "https://www.diretta.it/partita/Y5jBYghs/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "19.04.2013 23:00",
+  "teamA": "USM Blida",
+  "teamB": "Hussein Dey",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468fc16bb84049f090bbc4"
+  },
+  "id": "6289",
+  "link": "https://www.diretta.it/partita/tzY3vPO2/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "13.04.2013 23:00",
+  "teamA": "Ain Fakroun",
+  "teamB": "Merouana",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468fdb6bb84049f090bbc5"
+  },
+  "id": "6290",
+  "link": "https://www.diretta.it/partita/GhQGyN8L/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "13.04.2013 23:00",
+  "teamA": "Annaba",
+  "teamB": "MO Constantine",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f468ff66bb84049f090bbc6"
+  },
+  "id": "6291",
+  "link": "https://www.diretta.it/partita/COBnW0Wr/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "13.04.2013 23:00",
+  "teamA": "Arba",
+  "teamB": "Saida",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4690626bb84049f090bbc7"
+  },
+  "id": "6293",
+  "link": "https://www.diretta.it/partita/AFPKzsOR/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "13.04.2013 23:00",
+  "teamA": "Khroub",
+  "teamB": "ASM Oran",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4690c16bb84049f090bbc8"
+  },
+  "id": "6294",
+  "link": "https://www.diretta.it/partita/2kMCx3gF/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "13.04.2013 23:00",
+  "teamA": "Medea",
+  "teamB": "MSP Batna",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4690db6bb84049f090bbc9"
+  },
+  "id": "6295",
+  "link": "https://www.diretta.it/partita/vorqVKok/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "13.04.2013 23:00",
+  "teamA": "Mohammadia SA",
+  "teamB": "USM Blida",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4691676bb84049f090bbca"
+  },
+  "id": "6298",
+  "link": "https://www.diretta.it/partita/KUn9Is2q/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "05.04.2013 23:00",
+  "teamA": "Merouana",
+  "teamB": "Hussein Dey",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4691d26bb84049f090bbcb"
+  },
+  "id": "6301",
+  "link": "https://www.diretta.it/partita/6N6YOqPF/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "05.04.2013 23:00",
+  "teamA": "Mohammadia SA",
+  "teamB": "Medea",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4691ec6bb84049f090bbcc"
+  },
+  "id": "6302",
+  "link": "https://www.diretta.it/partita/ETuIGLWe/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "05.04.2013 23:00",
+  "teamA": "Mostaganem",
+  "teamB": "Khroub",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4692066bb84049f090bbcd"
+  },
+  "id": "6303",
+  "link": "https://www.diretta.it/partita/SW7UPP99/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "05.04.2013 23:00",
+  "teamA": "MSP Batna",
+  "teamB": "Annaba",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4692e96bb84049f090bbce"
+  },
+  "id": "6308",
+  "link": "https://www.diretta.it/partita/I1Qw322d/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "24.03.2013 00:00",
+  "teamA": "Hussein Dey",
+  "teamB": "Mohammadia SA",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4692fc6bb84049f090bbcf"
+  },
+  "id": "6309",
+  "link": "https://www.diretta.it/partita/Uyt494PS/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "24.03.2013 00:00",
+  "teamA": "Khroub",
+  "teamB": "MSP Batna",
+  "finalScore": "5-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4693116bb84049f090bbd0"
+  },
+  "id": "6310",
+  "link": "https://www.diretta.it/partita/Y9neBQfG/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "24.03.2013 00:00",
+  "teamA": "Medea",
+  "teamB": "Merouana",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4693296bb84049f090bbd1"
+  },
+  "id": "6311",
+  "link": "https://www.diretta.it/partita/WpSV4OXq/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "24.03.2013 00:00",
+  "teamA": "Saida",
+  "teamB": "MO Constantine",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4693516bb84049f090bbd2"
+  },
+  "id": "6312",
+  "link": "https://www.diretta.it/partita/Y98QQ5f3/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "24.03.2013 00:00",
+  "teamA": "Temouchent",
+  "teamB": "MO Bejaia",
+  "finalScore": "0-7",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4693956bb84049f090bbd3"
+  },
+  "id": "6314",
+  "link": "https://www.diretta.it/partita/naBQeoeT/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "17.03.2013 00:00",
+  "teamA": "Merouana",
+  "teamB": "Temouchent",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4693b06bb84049f090bbd4"
+  },
+  "id": "6315",
+  "link": "https://www.diretta.it/partita/vmmiC6uA/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "17.03.2013 00:00",
+  "teamA": "MO Bejaia",
+  "teamB": "Medea",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f46941d6bb84049f090bbd5"
+  },
+  "id": "6317",
+  "link": "https://www.diretta.it/partita/htlgi53p/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "17.03.2013 00:00",
+  "teamA": "Mohammadia SA",
+  "teamB": "Ain Fakroun",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4694536bb84049f090bbd6"
+  },
+  "id": "6319",
+  "link": "https://www.diretta.it/partita/4UfvF8ei/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "17.03.2013 00:00",
+  "teamA": "MSP Batna",
+  "teamB": "Saida",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f46946b6bb84049f090bbd7"
+  },
+  "id": "6320",
+  "link": "https://www.diretta.it/partita/88CMdRuN/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "17.03.2013 00:00",
+  "teamA": "USM Blida",
+  "teamB": "Annaba",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4694816bb84049f090bbd8"
+  },
+  "id": "6321",
+  "link": "https://www.diretta.it/partita/vZ7Ic7QG/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "10.03.2013 00:00",
+  "teamA": "Ain Fakroun",
+  "teamB": "Hussein Dey",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4694b26bb84049f090bbd9"
+  },
+  "id": "6323",
+  "link": "https://www.diretta.it/partita/AgG11kRi/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "09.03.2013 00:00",
+  "teamA": "Arba",
+  "teamB": "MO Constantine",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f4694e46bb84049f090bbda"
+  },
+  "id": "6325",
+  "link": "https://www.diretta.it/partita/folgeE4I/#informazioni-partita/",
+  "category": "football",
+  "country": "algeria",
+  "league": "ligue-2-2012-2013",
+  "matchDate": "09.03.2013 00:00",
+  "teamA": "Khroub",
+  "teamB": "Merouana",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+}]

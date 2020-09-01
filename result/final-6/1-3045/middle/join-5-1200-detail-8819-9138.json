@@ -1,0 +1,4238 @@
+[{
+  "_id": {
+    "$oid": "5f47bdc652ded690b2cd3dfe"
+  },
+  "id": "8820",
+  "link": "https://www.diretta.it/partita/GS6BhUQ1/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "05.02.2018 01:00",
+  "teamA": "Penya",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bde252ded690b2cd3dff"
+  },
+  "id": "8821",
+  "link": "https://www.diretta.it/partita/xx87gABe/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "04.02.2018 23:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bdfd52ded690b2cd3e00"
+  },
+  "id": "8822",
+  "link": "https://www.diretta.it/partita/UVfgHD32/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "04.02.2018 19:00",
+  "teamA": "Encamp",
+  "teamB": "Inter Escaldes",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47be1452ded690b2cd3e01"
+  },
+  "id": "8823",
+  "link": "https://www.diretta.it/partita/K0D2fjdk/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "04.02.2018 19:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Engordany",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47be3052ded690b2cd3e02"
+  },
+  "id": "8824",
+  "link": "https://www.diretta.it/partita/tAEbeWtq/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "02.02.2018 04:00",
+  "teamA": "Encamp",
+  "teamB": "Sant Julia",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47be4b52ded690b2cd3e03"
+  },
+  "id": "8825",
+  "link": "https://www.diretta.it/partita/lEjVCbCG/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "29.01.2018 01:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "UE Engordany",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "B: 80'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47be6752ded690b2cd3e04"
+  },
+  "id": "8826",
+  "link": "https://www.diretta.it/partita/fFcMEKs4/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "28.01.2018 23:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "B: 23'",
+  "historiesSecondHalf": "B: 90'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47be8352ded690b2cd3e05"
+  },
+  "id": "8827",
+  "link": "https://www.diretta.it/partita/xvmRDvcA/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "28.01.2018 19:00",
+  "teamA": "Penya",
+  "teamB": "Lusitanos",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bec552ded690b2cd3e06"
+  },
+  "id": "8829",
+  "link": "https://www.diretta.it/partita/zkPhHhn5/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "14.01.2018 19:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Penya",
+  "finalScore": "7-1",
+  "historiesFirstHalf": "4 - 0",
+  "historiesSecondHalf": "3 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bedc52ded690b2cd3e07"
+  },
+  "id": "8830",
+  "link": "https://www.diretta.it/partita/4QUT8Ugo/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "18.12.2017 01:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Encamp",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bf0f52ded690b2cd3e08"
+  },
+  "id": "8831",
+  "link": "https://www.diretta.it/partita/nkfEGtDi/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "17.12.2017 23:00",
+  "teamA": "UE Engordany",
+  "teamB": "Penya",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bf2c52ded690b2cd3e09"
+  },
+  "id": "8832",
+  "link": "https://www.diretta.it/partita/8beAHMco/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "17.12.2017 21:00",
+  "teamA": "Lusitanos",
+  "teamB": "Inter Escaldes",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bf4a52ded690b2cd3e0a"
+  },
+  "id": "8833",
+  "link": "https://www.diretta.it/partita/GObIF0Sc/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "17.12.2017 19:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 3",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bf5f52ded690b2cd3e0b"
+  },
+  "id": "8834",
+  "link": "https://www.diretta.it/partita/p0WuKf2n/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "15.12.2017 04:00",
+  "teamA": "Encamp",
+  "teamB": "Lusitanos",
+  "finalScore": "0-6",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "0 - 3",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bf7e52ded690b2cd3e0c"
+  },
+  "id": "8835",
+  "link": "https://www.diretta.it/partita/SOLpJEHh/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "14.12.2017 03:30",
+  "teamA": "UE Engordany",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bf9752ded690b2cd3e0d"
+  },
+  "id": "8836",
+  "link": "https://www.diretta.it/partita/YsvbEjWN/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "11.12.2017 01:00",
+  "teamA": "Penya",
+  "teamB": "Sant Julia",
+  "finalScore": "0-4",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bfdd52ded690b2cd3e0e"
+  },
+  "id": "8838",
+  "link": "https://www.diretta.it/partita/fiufFWGH/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "10.12.2017 21:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "UE Engordany",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47bff452ded690b2cd3e0f"
+  },
+  "id": "8839",
+  "link": "https://www.diretta.it/partita/EuOdGC1B/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "10.12.2017 19:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "5-3",
+  "historiesFirstHalf": "2 - 2",
+  "historiesSecondHalf": "3 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c15d52ded690b2cd3e10"
+  },
+  "id": "8842",
+  "link": "https://www.diretta.it/partita/fyiWaiHU/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "26.11.2017 21:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "A: 3', A: 25'",
+  "historiesSecondHalf": "B: 54', B: 77'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c2ca52ded690b2cd3e11"
+  },
+  "id": "8845",
+  "link": "https://www.diretta.it/partita/2NoC4F2a/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "19.11.2017 23:00",
+  "teamA": "Sant Julia",
+  "teamB": "Lusitanos",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c30452ded690b2cd3e12"
+  },
+  "id": "8847",
+  "link": "https://www.diretta.it/partita/tEpG3ZH5/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "19.11.2017 19:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c31e52ded690b2cd3e13"
+  },
+  "id": "8848",
+  "link": "https://www.diretta.it/partita/CYha7HIt/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "13.11.2017 01:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Penya",
+  "finalScore": "7-0",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "5 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c35552ded690b2cd3e14"
+  },
+  "id": "8850",
+  "link": "https://www.diretta.it/partita/zD1XBcAP/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "12.11.2017 21:00",
+  "teamA": "Lusitanos",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c4f752ded690b2cd3e15"
+  },
+  "id": "8854",
+  "link": "https://www.diretta.it/partita/80QxjGm6/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "05.11.2017 21:00",
+  "teamA": "Lusitanos",
+  "teamB": "Penya",
+  "finalScore": "12-1",
+  "historiesFirstHalf": "A: 19', A: 23', A: 38', B: 33'",
+  "historiesSecondHalf": "A: 50', A: 53', A: 56', A: 60', A: 69', A: 70', A: 77', A: 79', A: 83'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c51352ded690b2cd3e16"
+  },
+  "id": "8855",
+  "link": "https://www.diretta.it/partita/QyyYjdYa/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "05.11.2017 19:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Inter Escaldes",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c5a752ded690b2cd3e17"
+  },
+  "id": "8860",
+  "link": "https://www.diretta.it/partita/CYAbxcJ6/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "23.10.2017 00:00",
+  "teamA": "Lusitanos",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c5dd52ded690b2cd3e18"
+  },
+  "id": "8862",
+  "link": "https://www.diretta.it/partita/KzhkaKQJ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "22.10.2017 19:00",
+  "teamA": "Encamp",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "3-6",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c61e52ded690b2cd3e19"
+  },
+  "id": "8864",
+  "link": "https://www.diretta.it/partita/YsCfww40/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "16.10.2017 00:00",
+  "teamA": "Penya",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-4",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "B: 52', B: 59', B: 68',",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c64552ded690b2cd3e1a"
+  },
+  "id": "8865",
+  "link": "https://www.diretta.it/partita/QH8nuaZm/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "15.10.2017 22:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Engordany",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c66152ded690b2cd3e1b"
+  },
+  "id": "8866",
+  "link": "https://www.diretta.it/partita/487jvJlf/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "15.10.2017 20:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "Sant Julia",
+  "finalScore": "2-4",
+  "historiesFirstHalf": "A: 21', B: 8', B: 15'",
+  "historiesSecondHalf": "A: 67', B: 87', B: 90'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c67f52ded690b2cd3e1c"
+  },
+  "id": "8867",
+  "link": "https://www.diretta.it/partita/rgJstuKs/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "15.10.2017 18:00",
+  "teamA": "Lusitanos",
+  "teamB": "Encamp",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "A: 50', A: 55'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c69f52ded690b2cd3e1d"
+  },
+  "id": "8868",
+  "link": "https://www.diretta.it/partita/C0XVzpr2/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "02.10.2017 00:00",
+  "teamA": "UE Engordany",
+  "teamB": "Lusitanos",
+  "finalScore": "1-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c6ba52ded690b2cd3e1e"
+  },
+  "id": "8869",
+  "link": "https://www.diretta.it/partita/xfiAbmz9/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "01.10.2017 22:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Inter Escaldes",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c75352ded690b2cd3e1f"
+  },
+  "id": "8873",
+  "link": "https://www.diretta.it/partita/QqVJwnbq/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "24.09.2017 22:00",
+  "teamA": "Lusitanos",
+  "teamB": "Sant Julia",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "B: 55',",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c77652ded690b2cd3e20"
+  },
+  "id": "8874",
+  "link": "https://www.diretta.it/partita/K2hirSkS/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "24.09.2017 20:00",
+  "teamA": "UE Engordany",
+  "teamB": "Encamp",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "A: 46', A: 78',",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c79452ded690b2cd3e21"
+  },
+  "id": "8875",
+  "link": "https://www.diretta.it/partita/vmZNx6Dk/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2017-2018",
+  "matchDate": "24.09.2017 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "A: 83',",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c7b652ded690b2cd3e22"
+  },
+  "id": "8876",
+  "link": "https://www.diretta.it/partita/YTtYwKEC/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "01.06.2017 03:30",
+  "teamA": "Ordino",
+  "teamB": "Penya",
+  "finalScore": "1-5",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c80952ded690b2cd3e23"
+  },
+  "id": "8879",
+  "link": "https://www.diretta.it/partita/rkXMjB0G/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "21.05.2017 22:00",
+  "teamA": "UE Engordany",
+  "teamB": "Ordino",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c82352ded690b2cd3e24"
+  },
+  "id": "8880",
+  "link": "https://www.diretta.it/partita/SxkWsGHo/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "21.05.2017 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c84052ded690b2cd3e25"
+  },
+  "id": "8881",
+  "link": "https://www.diretta.it/partita/QXAmJWvo/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "21.05.2017 18:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c88452ded690b2cd3e26"
+  },
+  "id": "8883",
+  "link": "https://www.diretta.it/partita/zPTEhXV3/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "14.05.2017 22:00",
+  "teamA": "Ordino",
+  "teamB": "Encamp",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "A: 16'",
+  "historiesSecondHalf": "A: 90', B: 59'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c8c252ded690b2cd3e27"
+  },
+  "id": "8885",
+  "link": "https://www.diretta.it/partita/dIKHOhHN/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "14.05.2017 18:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c90a52ded690b2cd3e28"
+  },
+  "id": "8887",
+  "link": "https://www.diretta.it/partita/0jR8QEnB/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "07.05.2017 22:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "1 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c92552ded690b2cd3e29"
+  },
+  "id": "8888",
+  "link": "https://www.diretta.it/partita/vcz6fg1i/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "07.05.2017 20:00",
+  "teamA": "UE Engordany",
+  "teamB": "Encamp",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "A: 7'",
+  "historiesSecondHalf": "A: 82', B: 83'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c96a52ded690b2cd3e2a"
+  },
+  "id": "8889",
+  "link": "https://www.diretta.it/partita/IRLDPY1H/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "07.05.2017 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "A: 16', B: 24'",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c9a052ded690b2cd3e2b"
+  },
+  "id": "8891",
+  "link": "https://www.diretta.it/partita/rZrayW0T/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "30.04.2017 20:00",
+  "teamA": "Jenlai",
+  "teamB": "Encamp",
+  "finalScore": "0-5",
+  "historiesFirstHalf": "0 - 4",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47c9bb52ded690b2cd3e2c"
+  },
+  "id": "8892",
+  "link": "https://www.diretta.it/partita/SxT0SzIb/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "30.04.2017 18:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47ca6b52ded690b2cd3e2d"
+  },
+  "id": "8896",
+  "link": "https://www.diretta.it/partita/4rpexCoN/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "23.04.2017 18:00",
+  "teamA": "Encamp",
+  "teamB": "Ordino",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47ca8852ded690b2cd3e2e"
+  },
+  "id": "8897",
+  "link": "https://www.diretta.it/partita/WAZiUdmn/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "23.04.2017 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47caa752ded690b2cd3e2f"
+  },
+  "id": "8898",
+  "link": "https://www.diretta.it/partita/EgiruE14/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "10.04.2017 00:00",
+  "teamA": "Ordino",
+  "teamB": "Jenlai",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cb0852ded690b2cd3e30"
+  },
+  "id": "8901",
+  "link": "https://www.diretta.it/partita/hKzlVxYu/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "09.04.2017 01:00",
+  "teamA": "Sant Julia",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "3-3",
+  "historiesFirstHalf": "A: 34', A: 43', B: 9', B: 29'",
+  "historiesSecondHalf": "A: 47', B: 77'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cb4452ded690b2cd3e31"
+  },
+  "id": "8902",
+  "link": "https://www.diretta.it/partita/2NettHkU/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "20.03.2017 01:00",
+  "teamA": "Jenlai",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-6",
+  "historiesFirstHalf": "0 - 2",
+  "historiesSecondHalf": "0 - 4",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cbd152ded690b2cd3e32"
+  },
+  "id": "8905",
+  "link": "https://www.diretta.it/partita/S43TrJ5B/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "19.03.2017 19:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Encamp",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cc0352ded690b2cd3e33"
+  },
+  "id": "8906",
+  "link": "https://www.diretta.it/partita/bPFGoLLh/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "15.03.2017 03:00",
+  "teamA": "Encamp",
+  "teamB": "Ordino",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "2 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cc2052ded690b2cd3e34"
+  },
+  "id": "8907",
+  "link": "https://www.diretta.it/partita/pMBCn16n/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "15.03.2017 01:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cc7052ded690b2cd3e35"
+  },
+  "id": "8908",
+  "link": "https://www.diretta.it/partita/Kv4Pqaj5/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "14.03.2017 23:00",
+  "teamA": "Lusitanos",
+  "teamB": "Jenlai",
+  "finalScore": "7-0",
+  "historiesFirstHalf": "4 - 0",
+  "historiesSecondHalf": "3 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cca052ded690b2cd3e36"
+  },
+  "id": "8910",
+  "link": "https://www.diretta.it/partita/ljQthNrP/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "12.03.2017 03:30",
+  "teamA": "Jenlai",
+  "teamB": "UE Engordany",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cd7352ded690b2cd3e37"
+  },
+  "id": "8915",
+  "link": "https://www.diretta.it/partita/rg3qmDu0/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "05.03.2017 23:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cdb352ded690b2cd3e38"
+  },
+  "id": "8916",
+  "link": "https://www.diretta.it/partita/QHhlnXf6/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "05.03.2017 19:00",
+  "teamA": "Encamp",
+  "teamB": "Jenlai",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47ce5752ded690b2cd3e39"
+  },
+  "id": "8918",
+  "link": "https://www.diretta.it/partita/2yqa8NB8/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "26.02.2017 23:00",
+  "teamA": "Sant Julia",
+  "teamB": "Ordino",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47ce7552ded690b2cd3e3a"
+  },
+  "id": "8919",
+  "link": "https://www.diretta.it/partita/zTaykZAm/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "26.02.2017 21:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Engordany",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "A: 29'",
+  "historiesSecondHalf": "A: 90', B: 75'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47ceeb52ded690b2cd3e3b"
+  },
+  "id": "8922",
+  "link": "https://www.diretta.it/partita/rLPGo04e/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "19.02.2017 19:00",
+  "teamA": "Ordino",
+  "teamB": "Jenlai",
+  "finalScore": "6-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cf0a52ded690b2cd3e3c"
+  },
+  "id": "8923",
+  "link": "https://www.diretta.it/partita/lYfHqvZ7/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "19.02.2017 03:30",
+  "teamA": "Encamp",
+  "teamB": "UE Engordany",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cf2452ded690b2cd3e3d"
+  },
+  "id": "8924",
+  "link": "https://www.diretta.it/partita/AsdDpKJ1/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "19.02.2017 03:30",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cf5252ded690b2cd3e3e"
+  },
+  "id": "8925",
+  "link": "https://www.diretta.it/partita/4UQCntkk/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "19.02.2017 01:30",
+  "teamA": "Sant Julia",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cf7052ded690b2cd3e3f"
+  },
+  "id": "8926",
+  "link": "https://www.diretta.it/partita/A7R8mMZr/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "13.02.2017 01:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Encamp",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cfe152ded690b2cd3e40"
+  },
+  "id": "8928",
+  "link": "https://www.diretta.it/partita/Yozsh2RR/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "12.02.2017 21:00",
+  "teamA": "UE Engordany",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "A: 72', B: 51'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47cffe52ded690b2cd3e41"
+  },
+  "id": "8929",
+  "link": "https://www.diretta.it/partita/CWoYgOdF/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "12.02.2017 19:00",
+  "teamA": "Jenlai",
+  "teamB": "Sant Julia",
+  "finalScore": "0-5",
+  "historiesFirstHalf": "0 - 2",
+  "historiesSecondHalf": "0 - 3",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d07652ded690b2cd3e42"
+  },
+  "id": "8931",
+  "link": "https://www.diretta.it/partita/46rQepS2/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "06.02.2017 01:00",
+  "teamA": "Lusitanos",
+  "teamB": "Sant Julia",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d0ba52ded690b2cd3e43"
+  },
+  "id": "8932",
+  "link": "https://www.diretta.it/partita/rcsUf4s9/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "05.02.2017 23:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Jenlai",
+  "finalScore": "9-0",
+  "historiesFirstHalf": "3 - 0",
+  "historiesSecondHalf": "6 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d0d352ded690b2cd3e44"
+  },
+  "id": "8933",
+  "link": "https://www.diretta.it/partita/214sX0k2/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "05.02.2017 19:00",
+  "teamA": "UE Engordany",
+  "teamB": "Ordino",
+  "finalScore": "4-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d10452ded690b2cd3e45"
+  },
+  "id": "8934",
+  "link": "https://www.diretta.it/partita/bTLbuPsM/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "23.01.2017 00:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d15952ded690b2cd3e46"
+  },
+  "id": "8936",
+  "link": "https://www.diretta.it/partita/xKK2vqcS/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "22.01.2017 19:30",
+  "teamA": "Ordino",
+  "teamB": "Encamp",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d17852ded690b2cd3e47"
+  },
+  "id": "8937",
+  "link": "https://www.diretta.it/partita/d41ZYMKk/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "22.01.2017 18:00",
+  "teamA": "Jenlai",
+  "teamB": "Lusitanos",
+  "finalScore": "1-6",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d1c452ded690b2cd3e48"
+  },
+  "id": "8938",
+  "link": "https://www.diretta.it/partita/j3IjsoD9/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "18.12.2016 23:00",
+  "teamA": "UE Engordany",
+  "teamB": "Jenlai",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d1e552ded690b2cd3e49"
+  },
+  "id": "8939",
+  "link": "https://www.diretta.it/partita/46Mft5SF/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "18.12.2016 21:00",
+  "teamA": "Lusitanos",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d24752ded690b2cd3e4a"
+  },
+  "id": "8941",
+  "link": "https://www.diretta.it/partita/UmUsq7rc/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "18.12.2016 19:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Ordino",
+  "finalScore": "5-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d28152ded690b2cd3e4b"
+  },
+  "id": "8942",
+  "link": "https://www.diretta.it/partita/460PQPSS/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "12.12.2016 01:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Ordino",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "A: 51'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d30952ded690b2cd3e4c"
+  },
+  "id": "8944",
+  "link": "https://www.diretta.it/partita/tSiiMqyp/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "11.12.2016 21:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d32552ded690b2cd3e4d"
+  },
+  "id": "8945",
+  "link": "https://www.diretta.it/partita/2st0KN5d/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "11.12.2016 19:00",
+  "teamA": "Lusitanos",
+  "teamB": "UE Engordany",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d34052ded690b2cd3e4e"
+  },
+  "id": "8946",
+  "link": "https://www.diretta.it/partita/EH7CTRrA/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "05.12.2016 01:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Jenlai",
+  "finalScore": "7-2",
+  "historiesFirstHalf": "4 - 0",
+  "historiesSecondHalf": "3 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d35e52ded690b2cd3e4f"
+  },
+  "id": "8947",
+  "link": "https://www.diretta.it/partita/zR88U7T3/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "04.12.2016 23:00",
+  "teamA": "Ordino",
+  "teamB": "Sant Julia",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "0 - 2",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d38c52ded690b2cd3e50"
+  },
+  "id": "8948",
+  "link": "https://www.diretta.it/partita/Wh2HSobG/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "04.12.2016 19:00",
+  "teamA": "Encamp",
+  "teamB": "Lusitanos",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d3bc52ded690b2cd3e51"
+  },
+  "id": "8950",
+  "link": "https://www.diretta.it/partita/t494VmEc/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "28.11.2016 01:00",
+  "teamA": "UE Engordany",
+  "teamB": "Encamp",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d3d552ded690b2cd3e52"
+  },
+  "id": "8951",
+  "link": "https://www.diretta.it/partita/tECI7pMj/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "27.11.2016 23:00",
+  "teamA": "Jenlai",
+  "teamB": "Ordino",
+  "finalScore": "1-4",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d40552ded690b2cd3e53"
+  },
+  "id": "8952",
+  "link": "https://www.diretta.it/partita/2NDE8Q6p/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "27.11.2016 21:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "B: 19'",
+  "historiesSecondHalf": "A: 61', A: 65'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d43952ded690b2cd3e54"
+  },
+  "id": "8954",
+  "link": "https://www.diretta.it/partita/WvNrEnqN/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "21.11.2016 01:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "UE Engordany",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d45552ded690b2cd3e55"
+  },
+  "id": "8955",
+  "link": "https://www.diretta.it/partita/lGXwFSTG/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "20.11.2016 23:00",
+  "teamA": "Ordino",
+  "teamB": "Lusitanos",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d46d52ded690b2cd3e56"
+  },
+  "id": "8956",
+  "link": "https://www.diretta.it/partita/AVLnD6bT/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "20.11.2016 19:00",
+  "teamA": "Encamp",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d4d352ded690b2cd3e57"
+  },
+  "id": "8959",
+  "link": "https://www.diretta.it/partita/tjUVGla4/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "06.11.2016 23:00",
+  "teamA": "Jenlai",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d4f152ded690b2cd3e58"
+  },
+  "id": "8960",
+  "link": "https://www.diretta.it/partita/MmEUIAUi/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "06.11.2016 21:00",
+  "teamA": "Ordino",
+  "teamB": "UE Engordany",
+  "finalScore": "1-6",
+  "historiesFirstHalf": "A: 42', B: 7', B: 9', B: 36'",
+  "historiesSecondHalf": "B: 55', B: 77', B: 81'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d52052ded690b2cd3e59"
+  },
+  "id": "8962",
+  "link": "https://www.diretta.it/partita/UgRre7xo/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "31.10.2016 01:00",
+  "teamA": "Lusitanos",
+  "teamB": "Jenlai",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d5b352ded690b2cd3e5a"
+  },
+  "id": "8965",
+  "link": "https://www.diretta.it/partita/zg9ADFhC/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "30.10.2016 19:00",
+  "teamA": "Encamp",
+  "teamB": "Ordino",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d5cf52ded690b2cd3e5b"
+  },
+  "id": "8966",
+  "link": "https://www.diretta.it/partita/fwEkIwvs/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "24.10.2016 00:00",
+  "teamA": "Ordino",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d5ea52ded690b2cd3e5c"
+  },
+  "id": "8967",
+  "link": "https://www.diretta.it/partita/SS52FyOa/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "23.10.2016 22:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "1 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d60452ded690b2cd3e5d"
+  },
+  "id": "8968",
+  "link": "https://www.diretta.it/partita/lx7bGH8g/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "23.10.2016 20:00",
+  "teamA": "Jenlai",
+  "teamB": "UE Engordany",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d63652ded690b2cd3e5e"
+  },
+  "id": "8970",
+  "link": "https://www.diretta.it/partita/xbRNMJVP/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "17.10.2016 00:00",
+  "teamA": "UE Engordany",
+  "teamB": "Lusitanos",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d67e52ded690b2cd3e5f"
+  },
+  "id": "8971",
+  "link": "https://www.diretta.it/partita/MkqyaGwJ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "16.10.2016 22:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d6a952ded690b2cd3e60"
+  },
+  "id": "8972",
+  "link": "https://www.diretta.it/partita/rapXadOC/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "16.10.2016 20:00",
+  "teamA": "Ordino",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "A: 66', B: 49', B: 82',",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d6c352ded690b2cd3e61"
+  },
+  "id": "8973",
+  "link": "https://www.diretta.it/partita/b7SJNaGJ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "16.10.2016 18:00",
+  "teamA": "Encamp",
+  "teamB": "Jenlai",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d6db52ded690b2cd3e62"
+  },
+  "id": "8974",
+  "link": "https://www.diretta.it/partita/EJhG3vPm/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "03.10.2016 00:00",
+  "teamA": "Sant Julia",
+  "teamB": "Ordino",
+  "finalScore": "7-1",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "5 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d6f852ded690b2cd3e63"
+  },
+  "id": "8975",
+  "link": "https://www.diretta.it/partita/zZtP1Ig0/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "02.10.2016 22:00",
+  "teamA": "Lusitanos",
+  "teamB": "Encamp",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d71252ded690b2cd3e64"
+  },
+  "id": "8976",
+  "link": "https://www.diretta.it/partita/hAiK2bvf/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "02.10.2016 20:00",
+  "teamA": "Jenlai",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-5",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d75652ded690b2cd3e65"
+  },
+  "id": "8978",
+  "link": "https://www.diretta.it/partita/M7bxBMWD/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "26.09.2016 00:00",
+  "teamA": "Sant Julia",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d76d52ded690b2cd3e66"
+  },
+  "id": "8979",
+  "link": "https://www.diretta.it/partita/zB2tAtnK/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "25.09.2016 22:00",
+  "teamA": "Ordino",
+  "teamB": "Jenlai",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d78652ded690b2cd3e67"
+  },
+  "id": "8980",
+  "link": "https://www.diretta.it/partita/KrvD4K9s/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2016-2017",
+  "matchDate": "25.09.2016 18:00",
+  "teamA": "Encamp",
+  "teamB": "UE Engordany",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d7e252ded690b2cd3e68"
+  },
+  "id": "8983",
+  "link": "https://www.diretta.it/partita/SQScGip7/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "09.05.2016 00:00",
+  "teamA": "Ordino",
+  "teamB": "UE Engordany",
+  "finalScore": "4-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d7fe52ded690b2cd3e69"
+  },
+  "id": "8984",
+  "link": "https://www.diretta.it/partita/jLB36GGr/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "07.05.2016 02:45",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d84552ded690b2cd3e6a"
+  },
+  "id": "8985",
+  "link": "https://www.diretta.it/partita/Y3TgHXU0/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "30.04.2016 02:30",
+  "teamA": "Penya",
+  "teamB": "Encamp",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d8a152ded690b2cd3e6b"
+  },
+  "id": "8987",
+  "link": "https://www.diretta.it/partita/lCPyBd8R/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "24.04.2016 22:00",
+  "teamA": "Sant Julia",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d8de52ded690b2cd3e6c"
+  },
+  "id": "8989",
+  "link": "https://www.diretta.it/partita/xxzoJg0l/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "24.04.2016 18:00",
+  "teamA": "Encamp",
+  "teamB": "Ordino",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d95152ded690b2cd3e6d"
+  },
+  "id": "8992",
+  "link": "https://www.diretta.it/partita/rafyDIwF/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "17.04.2016 22:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d96c52ded690b2cd3e6e"
+  },
+  "id": "8993",
+  "link": "https://www.diretta.it/partita/t6lFOFxR/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "17.04.2016 20:00",
+  "teamA": "Penya",
+  "teamB": "Ordino",
+  "finalScore": "3-7",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47d99a52ded690b2cd3e6f"
+  },
+  "id": "8994",
+  "link": "https://www.diretta.it/partita/lxeXDbO8/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "17.04.2016 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47da0852ded690b2cd3e70"
+  },
+  "id": "8997",
+  "link": "https://www.diretta.it/partita/n7e6Qy8E/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "10.04.2016 18:00",
+  "teamA": "Encamp",
+  "teamB": "Penya",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47da2152ded690b2cd3e71"
+  },
+  "id": "8998",
+  "link": "https://www.diretta.it/partita/YTCpjeW1/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "10.04.2016 18:00",
+  "teamA": "Sant Julia",
+  "teamB": "Lusitanos",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "1 - 2",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47da5252ded690b2cd3e72"
+  },
+  "id": "9000",
+  "link": "https://www.diretta.it/partita/fwEtiyHe/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "03.04.2016 22:00",
+  "teamA": "Lusitanos",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47da9852ded690b2cd3e73"
+  },
+  "id": "9002",
+  "link": "https://www.diretta.it/partita/Q39xhH1k/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "03.04.2016 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dab352ded690b2cd3e74"
+  },
+  "id": "9003",
+  "link": "https://www.diretta.it/partita/tA4G3E01/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "21.03.2016 01:00",
+  "teamA": "Ordino",
+  "teamB": "Penya",
+  "finalScore": "3-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47daf452ded690b2cd3e75"
+  },
+  "id": "9005",
+  "link": "https://www.diretta.it/partita/boFB4foe/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "20.03.2016 19:00",
+  "teamA": "Encamp",
+  "teamB": "UE Engordany",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "0 - 2",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47db1c52ded690b2cd3e76"
+  },
+  "id": "9006",
+  "link": "https://www.diretta.it/partita/tWX5cwvS/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "20.03.2016 19:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47db4752ded690b2cd3e77"
+  },
+  "id": "9007",
+  "link": "https://www.diretta.it/partita/ruABuXDd/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "15.02.2016 00:00",
+  "teamA": "UE Engordany",
+  "teamB": "Ordino",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47db6052ded690b2cd3e78"
+  },
+  "id": "9008",
+  "link": "https://www.diretta.it/partita/zmCd3z63/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "14.02.2016 22:00",
+  "teamA": "Penya",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-4",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 3",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47db7a52ded690b2cd3e79"
+  },
+  "id": "9009",
+  "link": "https://www.diretta.it/partita/4lB7tDbj/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "14.02.2016 19:00",
+  "teamA": "Encamp",
+  "teamB": "Lusitanos",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47db9152ded690b2cd3e7a"
+  },
+  "id": "9010",
+  "link": "https://www.diretta.it/partita/ddDh4Gjc/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "14.02.2016 19:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dbac52ded690b2cd3e7b"
+  },
+  "id": "9011",
+  "link": "https://www.diretta.it/partita/p4UznZzT/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "08.02.2016 01:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "UE Engordany",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dbc352ded690b2cd3e7c"
+  },
+  "id": "9012",
+  "link": "https://www.diretta.it/partita/jsVWnFLM/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "07.02.2016 23:00",
+  "teamA": "Ordino",
+  "teamB": "Encamp",
+  "finalScore": "0-4",
+  "historiesFirstHalf": "0 - 2",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dc0752ded690b2cd3e7d"
+  },
+  "id": "9014",
+  "link": "https://www.diretta.it/partita/CjWSme6G/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "07.02.2016 19:00",
+  "teamA": "Lusitanos",
+  "teamB": "Penya",
+  "finalScore": "4-0",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dc2252ded690b2cd3e7e"
+  },
+  "id": "9015",
+  "link": "https://www.diretta.it/partita/fFyOlyiA/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "01.02.2016 00:00",
+  "teamA": "Sant Julia",
+  "teamB": "Penya",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dc6452ded690b2cd3e7f"
+  },
+  "id": "9018",
+  "link": "https://www.diretta.it/partita/GOxKkHy4/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "31.01.2016 19:00",
+  "teamA": "UE Engordany",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-3",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dc7d52ded690b2cd3e80"
+  },
+  "id": "9019",
+  "link": "https://www.diretta.it/partita/UVdPTZEp/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "14.12.2015 01:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Encamp",
+  "finalScore": "6-0",
+  "historiesFirstHalf": "5 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dcf152ded690b2cd3e81"
+  },
+  "id": "9022",
+  "link": "https://www.diretta.it/partita/bm6gZeiN/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "13.12.2015 19:00",
+  "teamA": "Penya",
+  "teamB": "Ordino",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dd4652ded690b2cd3e82"
+  },
+  "id": "9025",
+  "link": "https://www.diretta.it/partita/GOGlzxxH/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "06.12.2015 21:00",
+  "teamA": "UE Engordany",
+  "teamB": "Penya",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dd8b52ded690b2cd3e83"
+  },
+  "id": "9026",
+  "link": "https://www.diretta.it/partita/8bDtxb74/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "06.12.2015 19:00",
+  "teamA": "Lusitanos",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-4",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dda052ded690b2cd3e84"
+  },
+  "id": "9027",
+  "link": "https://www.diretta.it/partita/d2AgGGpo/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "30.11.2015 01:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Ordino",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47ddb552ded690b2cd3e85"
+  },
+  "id": "9028",
+  "link": "https://www.diretta.it/partita/pQsQXrGI/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "29.11.2015 23:00",
+  "teamA": "Penya",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-5",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dde152ded690b2cd3e86"
+  },
+  "id": "9029",
+  "link": "https://www.diretta.it/partita/A5byu0No/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "29.11.2015 21:00",
+  "teamA": "Sant Julia",
+  "teamB": "Lusitanos",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47ddfb52ded690b2cd3e87"
+  },
+  "id": "9030",
+  "link": "https://www.diretta.it/partita/ldcuvKxh/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "29.11.2015 19:00",
+  "teamA": "UE Engordany",
+  "teamB": "Encamp",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47de2952ded690b2cd3e88"
+  },
+  "id": "9031",
+  "link": "https://www.diretta.it/partita/21hLYO0C/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "23.11.2015 01:00",
+  "teamA": "Encamp",
+  "teamB": "Penya",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dec052ded690b2cd3e89"
+  },
+  "id": "9034",
+  "link": "https://www.diretta.it/partita/OAgHZ4o6/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "22.11.2015 19:00",
+  "teamA": "Lusitanos",
+  "teamB": "UE Engordany",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47df0552ded690b2cd3e8a"
+  },
+  "id": "9036",
+  "link": "https://www.diretta.it/partita/IeeZsTwQ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "15.11.2015 23:00",
+  "teamA": "Ordino",
+  "teamB": "UE Engordany",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "A: 88', A: 90'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47df2c52ded690b2cd3e8b"
+  },
+  "id": "9038",
+  "link": "https://www.diretta.it/partita/zyr1wmns/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "15.11.2015 19:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47df4352ded690b2cd3e8c"
+  },
+  "id": "9039",
+  "link": "https://www.diretta.it/partita/OdErL5WC/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "09.11.2015 01:00",
+  "teamA": "UE Engordany",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47df6d52ded690b2cd3e8d"
+  },
+  "id": "9040",
+  "link": "https://www.diretta.it/partita/GWAzNR10/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "08.11.2015 23:00",
+  "teamA": "Penya",
+  "teamB": "Lusitanos",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47df8652ded690b2cd3e8e"
+  },
+  "id": "9041",
+  "link": "https://www.diretta.it/partita/UZEvMoH6/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "08.11.2015 21:00",
+  "teamA": "Encamp",
+  "teamB": "Ordino",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "A: 48', A: 85', A: 90'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47df9d52ded690b2cd3e8f"
+  },
+  "id": "9042",
+  "link": "https://www.diretta.it/partita/2mDnKPoJ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "08.11.2015 19:00",
+  "teamA": "Sant Julia",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dfb352ded690b2cd3e90"
+  },
+  "id": "9043",
+  "link": "https://www.diretta.it/partita/Y7LVN7nf/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "02.11.2015 01:00",
+  "teamA": "Penya",
+  "teamB": "Sant Julia",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dfc852ded690b2cd3e91"
+  },
+  "id": "9044",
+  "link": "https://www.diretta.it/partita/fHMROmXm/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "01.11.2015 23:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Engordany",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "A: 42', B: 21'",
+  "historiesSecondHalf": "A: 49', A: 64'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47dfe152ded690b2cd3e92"
+  },
+  "id": "9045",
+  "link": "https://www.diretta.it/partita/prydU99Q/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "01.11.2015 19:00",
+  "teamA": "Ordino",
+  "teamB": "Lusitanos",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e02552ded690b2cd3e93"
+  },
+  "id": "9047",
+  "link": "https://www.diretta.it/partita/zDg57n2D/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "26.10.2015 01:00",
+  "teamA": "Lusitanos",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e04e52ded690b2cd3e94"
+  },
+  "id": "9048",
+  "link": "https://www.diretta.it/partita/lGsmWVvE/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "25.10.2015 23:00",
+  "teamA": "Encamp",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-5",
+  "historiesFirstHalf": "0 - 2",
+  "historiesSecondHalf": "1 - 3",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e0da52ded690b2cd3e95"
+  },
+  "id": "9050",
+  "link": "https://www.diretta.it/partita/2JoiVkfK/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "25.10.2015 19:00",
+  "teamA": "UE Engordany",
+  "teamB": "Sant Julia",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e0f152ded690b2cd3e96"
+  },
+  "id": "9051",
+  "link": "https://www.diretta.it/partita/0f1hAlIf/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "19.10.2015 00:00",
+  "teamA": "Sant Julia",
+  "teamB": "Encamp",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e10752ded690b2cd3e97"
+  },
+  "id": "9052",
+  "link": "https://www.diretta.it/partita/6X1lBU2l/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "18.10.2015 22:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e12252ded690b2cd3e98"
+  },
+  "id": "9053",
+  "link": "https://www.diretta.it/partita/vo0d98X0/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "18.10.2015 18:00",
+  "teamA": "Penya",
+  "teamB": "UE Engordany",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "B: 82', B: 90'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e15c52ded690b2cd3e99"
+  },
+  "id": "9055",
+  "link": "https://www.diretta.it/partita/tjI9ICAE/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "05.10.2015 00:00",
+  "teamA": "Ordino",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "3-4",
+  "historiesFirstHalf": "0 - 4",
+  "historiesSecondHalf": "3 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e17352ded690b2cd3e9a"
+  },
+  "id": "9056",
+  "link": "https://www.diretta.it/partita/lGLHGjuR/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "04.10.2015 22:00",
+  "teamA": "Encamp",
+  "teamB": "UE Engordany",
+  "finalScore": "2-4",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e18b52ded690b2cd3e9b"
+  },
+  "id": "9057",
+  "link": "https://www.diretta.it/partita/2aJ5Jhe8/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "04.10.2015 22:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Penya",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e1a152ded690b2cd3e9c"
+  },
+  "id": "9058",
+  "link": "https://www.diretta.it/partita/APMDHWPK/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "04.10.2015 18:00",
+  "teamA": "Lusitanos",
+  "teamB": "Sant Julia",
+  "finalScore": "1-3",
+  "historiesFirstHalf": "0 - 3",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e1e752ded690b2cd3e9d"
+  },
+  "id": "9059",
+  "link": "https://www.diretta.it/partita/niyJek31/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "28.09.2015 00:00",
+  "teamA": "UE Engordany",
+  "teamB": "Lusitanos",
+  "finalScore": "2-4",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e21052ded690b2cd3e9e"
+  },
+  "id": "9061",
+  "link": "https://www.diretta.it/partita/EwwBcBYl/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "27.09.2015 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e22852ded690b2cd3e9f"
+  },
+  "id": "9062",
+  "link": "https://www.diretta.it/partita/0fuNf9I7/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2015-2016",
+  "matchDate": "27.09.2015 18:00",
+  "teamA": "Penya",
+  "teamB": "Encamp",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e26652ded690b2cd3ea0"
+  },
+  "id": "9064",
+  "link": "https://www.diretta.it/partita/tQINDa3p/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "21.05.2015 03:30",
+  "teamA": "UE Engordany",
+  "teamB": "Atletic Escaldes",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e27c52ded690b2cd3ea1"
+  },
+  "id": "9065",
+  "link": "https://www.diretta.it/partita/EiIGVaLg/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "03.05.2015 22:00",
+  "teamA": "Encamp",
+  "teamB": "UE Engordany",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "A: 80', B: 77'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e29252ded690b2cd3ea2"
+  },
+  "id": "9066",
+  "link": "https://www.diretta.it/partita/Yu1JWu6m/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "03.05.2015 22:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "Ordino",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e2a652ded690b2cd3ea3"
+  },
+  "id": "9067",
+  "link": "https://www.diretta.it/partita/AaF8yViF/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "03.05.2015 18:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e2ba52ded690b2cd3ea4"
+  },
+  "id": "9068",
+  "link": "https://www.diretta.it/partita/hOK3xBx9/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "03.05.2015 18:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "2-4",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e2cc52ded690b2cd3ea5"
+  },
+  "id": "9069",
+  "link": "https://www.diretta.it/partita/xAFmx2rQ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "26.04.2015 22:00",
+  "teamA": "Ordino",
+  "teamB": "Encamp",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e30252ded690b2cd3ea6"
+  },
+  "id": "9071",
+  "link": "https://www.diretta.it/partita/0UXHE7p2/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "26.04.2015 18:00",
+  "teamA": "Lusitanos",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e31a52ded690b2cd3ea7"
+  },
+  "id": "9072",
+  "link": "https://www.diretta.it/partita/EXLawiN2/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "26.04.2015 18:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-3",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "1 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e33452ded690b2cd3ea8"
+  },
+  "id": "9073",
+  "link": "https://www.diretta.it/partita/M1X0EbjJ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "20.04.2015 00:00",
+  "teamA": "Ordino",
+  "teamB": "UE Engordany",
+  "finalScore": "1-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e34c52ded690b2cd3ea9"
+  },
+  "id": "9074",
+  "link": "https://www.diretta.it/partita/nRTDFmVe/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "19.04.2015 22:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e36452ded690b2cd3eaa"
+  },
+  "id": "9075",
+  "link": "https://www.diretta.it/partita/O6BqwrTJ/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "19.04.2015 18:00",
+  "teamA": "Encamp",
+  "teamB": "Inter Escaldes",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e37b52ded690b2cd3eab"
+  },
+  "id": "9076",
+  "link": "https://www.diretta.it/partita/42v9GTFk/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "19.04.2015 18:00",
+  "teamA": "Lusitanos",
+  "teamB": "Sant Julia",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e38f52ded690b2cd3eac"
+  },
+  "id": "9077",
+  "link": "https://www.diretta.it/partita/rBYdFvyD/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "13.04.2015 00:00",
+  "teamA": "UE Engordany",
+  "teamB": "Encamp",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e3dc52ded690b2cd3ead"
+  },
+  "id": "9080",
+  "link": "https://www.diretta.it/partita/QBu5H90q/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "12.04.2015 18:00",
+  "teamA": "Sant Julia",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e3f552ded690b2cd3eae"
+  },
+  "id": "9081",
+  "link": "https://www.diretta.it/partita/zoVlH060/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "23.03.2015 01:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "UE Engordany",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e41d52ded690b2cd3eaf"
+  },
+  "id": "9082",
+  "link": "https://www.diretta.it/partita/n3kVNBNF/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "22.03.2015 23:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e43252ded690b2cd3eb0"
+  },
+  "id": "9083",
+  "link": "https://www.diretta.it/partita/hMupItif/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "22.03.2015 19:00",
+  "teamA": "Encamp",
+  "teamB": "Ordino",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e44652ded690b2cd3eb1"
+  },
+  "id": "9084",
+  "link": "https://www.diretta.it/partita/URvzNVxM/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "22.03.2015 19:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e45d52ded690b2cd3eb2"
+  },
+  "id": "9085",
+  "link": "https://www.diretta.it/partita/tnxtJMyl/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "16.03.2015 01:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "Encamp",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "B: 22'",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e47552ded690b2cd3eb3"
+  },
+  "id": "9086",
+  "link": "https://www.diretta.it/partita/vwnNPXh3/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "15.03.2015 23:00",
+  "teamA": "Sant Julia",
+  "teamB": "Lusitanos",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "B: 48'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e48d52ded690b2cd3eb4"
+  },
+  "id": "9087",
+  "link": "https://www.diretta.it/partita/YaoROi89/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "15.03.2015 23:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "A: 90'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e4c952ded690b2cd3eb5"
+  },
+  "id": "9089",
+  "link": "https://www.diretta.it/partita/xjq42uXm/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "16.02.2015 01:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Encamp",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e51052ded690b2cd3eb6"
+  },
+  "id": "9092",
+  "link": "https://www.diretta.it/partita/Or3T8sfK/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "15.02.2015 19:00",
+  "teamA": "Lusitanos",
+  "teamB": "Sant Julia",
+  "finalScore": "3-2",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "2 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e52652ded690b2cd3eb7"
+  },
+  "id": "9093",
+  "link": "https://www.diretta.it/partita/veHwnKn7/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "09.02.2015 01:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "Lusitanos",
+  "finalScore": "0-4",
+  "historiesFirstHalf": "0 - 2",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e53a52ded690b2cd3eb8"
+  },
+  "id": "9094",
+  "link": "https://www.diretta.it/partita/dWRYn0X0/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "08.02.2015 23:00",
+  "teamA": "Sant Julia",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e54f52ded690b2cd3eb9"
+  },
+  "id": "9095",
+  "link": "https://www.diretta.it/partita/ph4P9NvE/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "08.02.2015 19:00",
+  "teamA": "Encamp",
+  "teamB": "UE Engordany",
+  "finalScore": "2-3",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "2 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e57852ded690b2cd3eba"
+  },
+  "id": "9096",
+  "link": "https://www.diretta.it/partita/IoGsov2D/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "08.02.2015 19:00",
+  "teamA": "Ordino",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e59e52ded690b2cd3ebb"
+  },
+  "id": "9097",
+  "link": "https://www.diretta.it/partita/AFPMk2mr/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "26.01.2015 01:00",
+  "teamA": "Lusitanos",
+  "teamB": "Ordino",
+  "finalScore": "7-1",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "5 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e5b252ded690b2cd3ebc"
+  },
+  "id": "9098",
+  "link": "https://www.diretta.it/partita/l6OQlM2l/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "25.01.2015 23:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Encamp",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e5da52ded690b2cd3ebd"
+  },
+  "id": "9099",
+  "link": "https://www.diretta.it/partita/rTNUmtIf/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "25.01.2015 21:00",
+  "teamA": "UE Engordany",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "B: 41', B: 42'",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e5f052ded690b2cd3ebe"
+  },
+  "id": "9100",
+  "link": "https://www.diretta.it/partita/f56h7UIF/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "25.01.2015 19:00",
+  "teamA": "Sant Julia",
+  "teamB": "Inter Escaldes",
+  "finalScore": "8-0",
+  "historiesFirstHalf": "3 - 0",
+  "historiesSecondHalf": "5 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e60552ded690b2cd3ebf"
+  },
+  "id": "9101",
+  "link": "https://www.diretta.it/partita/Ucq7eXJ3/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "18.01.2015 19:00",
+  "teamA": "Encamp",
+  "teamB": "Inter Escaldes",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e61952ded690b2cd3ec0"
+  },
+  "id": "9102",
+  "link": "https://www.diretta.it/partita/AH4tAWYd/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "15.12.2014 01:00",
+  "teamA": "Ordino",
+  "teamB": "Sant Julia",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "1 - 2",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e63152ded690b2cd3ec1"
+  },
+  "id": "9103",
+  "link": "https://www.diretta.it/partita/Mi8p9jl3/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "14.12.2014 23:00",
+  "teamA": "Encamp",
+  "teamB": "Lusitanos",
+  "finalScore": "0-6",
+  "historiesFirstHalf": "0 - 4",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e64252ded690b2cd3ec2"
+  },
+  "id": "9104",
+  "link": "https://www.diretta.it/partita/8CQcomdd/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "14.12.2014 22:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Inter Escaldes",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e67752ded690b2cd3ec3"
+  },
+  "id": "9106",
+  "link": "https://www.diretta.it/partita/0nNkm9Rq/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "08.12.2014 01:00",
+  "teamA": "Lusitanos",
+  "teamB": "UE Engordany",
+  "finalScore": "8-2",
+  "historiesFirstHalf": "3 - 1",
+  "historiesSecondHalf": "5 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e68952ded690b2cd3ec4"
+  },
+  "id": "9107",
+  "link": "https://www.diretta.it/partita/bwyOikJS/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "07.12.2014 23:00",
+  "teamA": "Sant Julia",
+  "teamB": "Encamp",
+  "finalScore": "4-1",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "4 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e6ae52ded690b2cd3ec5"
+  },
+  "id": "9108",
+  "link": "https://www.diretta.it/partita/GEoJhV3M/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "07.12.2014 21:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "Ordino",
+  "finalScore": "0-2",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e6f552ded690b2cd3ec6"
+  },
+  "id": "9111",
+  "link": "https://www.diretta.it/partita/2BsFgBlG/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "30.11.2014 23:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Lusitanos",
+  "finalScore": "5-1",
+  "historiesFirstHalf": "3 - 0",
+  "historiesSecondHalf": "2 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e70952ded690b2cd3ec7"
+  },
+  "id": "9112",
+  "link": "https://www.diretta.it/partita/8lrBfiZ9/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "30.11.2014 19:00",
+  "teamA": "UE Engordany",
+  "teamB": "Sant Julia",
+  "finalScore": "0-5",
+  "historiesFirstHalf": "0 - 4",
+  "historiesSecondHalf": "0 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e71c52ded690b2cd3ec8"
+  },
+  "id": "9113",
+  "link": "https://www.diretta.it/partita/dvMKZkcp/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "24.11.2014 01:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "UE Engordany",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e73552ded690b2cd3ec9"
+  },
+  "id": "9114",
+  "link": "https://www.diretta.it/partita/OpE6cgki/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "23.11.2014 19:00",
+  "teamA": "Lusitanos",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e74b52ded690b2cd3eca"
+  },
+  "id": "9115",
+  "link": "https://www.diretta.it/partita/jcqhvWlT/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "23.11.2014 19:00",
+  "teamA": "Ordino",
+  "teamB": "Encamp",
+  "finalScore": "4-1",
+  "historiesFirstHalf": "2 - 0",
+  "historiesSecondHalf": "2 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e75f52ded690b2cd3ecb"
+  },
+  "id": "9116",
+  "link": "https://www.diretta.it/partita/AsQOY9Cj/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "23.11.2014 19:00",
+  "teamA": "Sant Julia",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e79752ded690b2cd3ecc"
+  },
+  "id": "9118",
+  "link": "https://www.diretta.it/partita/rXupthKG/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "09.11.2014 22:00",
+  "teamA": "Ordino",
+  "teamB": "UE Engordany",
+  "finalScore": "2-2",
+  "historiesFirstHalf": "0 - 0",
+  "historiesSecondHalf": "2 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e7ac52ded690b2cd3ecd"
+  },
+  "id": "9119",
+  "link": "https://www.diretta.it/partita/C6pluCZM/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "09.11.2014 19:00",
+  "teamA": "Encamp",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "1-0",
+  "historiesFirstHalf": "A: 33'",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e7d352ded690b2cd3ece"
+  },
+  "id": "9120",
+  "link": "https://www.diretta.it/partita/MHiyrEk4/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "09.11.2014 19:00",
+  "teamA": "Sant Julia",
+  "teamB": "Lusitanos",
+  "finalScore": "0-0",
+  "historiesFirstHalf": "0-0",
+  "historiesSecondHalf": "0-0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e7e852ded690b2cd3ecf"
+  },
+  "id": "9121",
+  "link": "https://www.diretta.it/partita/0C6tMWSp/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "03.11.2014 01:00",
+  "teamA": "UE Santa Coloma",
+  "teamB": "Sant Julia",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e82052ded690b2cd3ed0"
+  },
+  "id": "9123",
+  "link": "https://www.diretta.it/partita/GKlTqzLi/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "02.11.2014 19:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "Ordino",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e83252ded690b2cd3ed1"
+  },
+  "id": "9124",
+  "link": "https://www.diretta.it/partita/xUkPpG5o/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "02.11.2014 19:00",
+  "teamA": "Lusitanos",
+  "teamB": "Inter Escaldes",
+  "finalScore": "3-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e84252ded690b2cd3ed2"
+  },
+  "id": "9125",
+  "link": "https://www.diretta.it/partita/4tLARh5N/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "27.10.2014 01:00",
+  "teamA": "Encamp",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e87652ded690b2cd3ed3"
+  },
+  "id": "9127",
+  "link": "https://www.diretta.it/partita/jwH6SYkH/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "26.10.2014 19:00",
+  "teamA": "Ordino",
+  "teamB": "Lusitanos",
+  "finalScore": "1-2",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "1 - 1",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e8aa52ded690b2cd3ed4"
+  },
+  "id": "9129",
+  "link": "https://www.diretta.it/partita/McTgVz6b/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "20.10.2014 00:00",
+  "teamA": "Lusitanos",
+  "teamB": "Encamp",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e8be52ded690b2cd3ed5"
+  },
+  "id": "9130",
+  "link": "https://www.diretta.it/partita/UNScUfL4/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "19.10.2014 21:00",
+  "teamA": "FC Santa Coloma",
+  "teamB": "UE Engordany",
+  "finalScore": "9-0",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e8cf52ded690b2cd3ed6"
+  },
+  "id": "9131",
+  "link": "https://www.diretta.it/partita/0ruoXdyn/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "19.10.2014 18:00",
+  "teamA": "Inter Escaldes",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-3",
+  "historiesFirstHalf": "0 - 1",
+  "historiesSecondHalf": "0 - 2",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e8e252ded690b2cd3ed7"
+  },
+  "id": "9132",
+  "link": "https://www.diretta.it/partita/r7UkWGjh/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "19.10.2014 18:00",
+  "teamA": "Sant Julia",
+  "teamB": "Ordino",
+  "finalScore": "2-0",
+  "historiesFirstHalf": "1 - 0",
+  "historiesSecondHalf": "1 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e8f452ded690b2cd3ed8"
+  },
+  "id": "9133",
+  "link": "https://www.diretta.it/partita/WS0XDZzO/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "06.10.2014 00:00",
+  "teamA": "Encamp",
+  "teamB": "Sant Julia",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e90752ded690b2cd3ed9"
+  },
+  "id": "9134",
+  "link": "https://www.diretta.it/partita/Ei6SEFLH/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "05.10.2014 20:00",
+  "teamA": "Ordino",
+  "teamB": "Inter Escaldes",
+  "finalScore": "3-1",
+  "historiesFirstHalf": "1 - 1",
+  "historiesSecondHalf": "2 - 0",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e91e52ded690b2cd3eda"
+  },
+  "id": "9135",
+  "link": "https://www.diretta.it/partita/AJayDgjU/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "05.10.2014 18:00",
+  "teamA": "UE Engordany",
+  "teamB": "Lusitanos",
+  "finalScore": "0-5",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e95752ded690b2cd3edb"
+  },
+  "id": "9137",
+  "link": "https://www.diretta.it/partita/0UaCIcMh/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "29.09.2014 00:00",
+  "teamA": "Ordino",
+  "teamB": "UE Santa Coloma",
+  "finalScore": "0-1",
+  "historiesFirstHalf": "",
+  "historiesSecondHalf": "",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f47e96d52ded690b2cd3edc"
+  },
+  "id": "9138",
+  "link": "https://www.diretta.it/partita/z17OFe6B/#informazioni-partita/",
+  "category": "football",
+  "country": "andorra",
+  "league": "primera-divisio-2014-2015",
+  "matchDate": "28.09.2014 21:00",
+  "teamA": "Lusitanos",
+  "teamB": "FC Santa Coloma",
+  "finalScore": "2-1",
+  "historiesFirstHalf": "B: 17'",
+  "historiesSecondHalf": "A: 59', A: 83'",
+  "final1X2": "",
+  "overUnder": "",
+  "gol": "",
+  "__v": 0
+}]
